@@ -1,27 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #79D7BE;">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>My First Web Page</title>
  <style>
-    .panel {
-      border: 1px solid #000;
-      padding: 20px;
-      width: 300px;
-      margin: 20px auto;
-      text-align: left;
-    }
+   body {
+     font-family: "Times New Roman";
+     position: relative;
+   }
+   .banner {
+      line-height: 1;
+      background-color: #F6F4F0;
+      text-align: center;
+      top: 5%;
+      padding: 1.15%;
+      width: 100%;
+   }
+   
+   .frame {
+      line-height: 1;
+      border: 2px solid #000000;
+      background-color: #F6F4F0;
+      padding: 2.5%;
+      width: 95%;
+      font-size: 20px;
+      text-align: justify;
+      position: relative;
+      top: 2.5%;
+      left: 51%;
+      transform: translateX(-50%);
+   }
+
+   .panel {
+      line-height: 1;
+      border: 2px solid #000000;
+      background-color: #F6F4F0;
+      padding: 3.5%;
+      margin: 1%;
+      width: 45%;
+      font-size: 20px;
+      text-align: justify;
+      position: relative;
+      top: 2.5%;
+      left: 25%;
+      transform: translateX(-50%);
+   }
+
+
+   .projectdetails {
+      line-height: 1;
+      height: 100%;
+      font-size: 80%;
+   }
  </style>
 </head>
 <body>
- <h1>Hi! I am Jonathan Lance S. Mayo</h1>
- <div class="panel">
-    <p><strong>Last Name:</strong> Mayo</p>
-    <p><strong>First Name:</strong> Jonathan Lance</p>
-    <p><strong>Middle Initial:</strong> S.</p>
-    <p><strong>Birthday:</strong> [Your Birthday]</p>
-    <p><strong>School:</strong> Mapua Malayan Colleges Mindanao</p>
- </div>
+<div class="banner">
+ <h1>WELCOME TO MY WORKING PROJECT WEBSITE</h1>
+ <hr>
+ <p>This is my first website. I am learning how to create a website.</p>
+</div>
+<br>
+<div class="frame">
+<div style="display: flex; justify-content: space-around;">
+<div class="panel">
+   <h1> PERSONAL INFORMATION</h1>
+   <hr>
+   <div style="display: flex; justify-content: space-between;">
+     <div>
+         <p><strong>Last Name:</strong> Mayo</p>
+         <p><strong>First Name:</strong> Jonathan Lance</p>
+         <p><strong>Middle Initial:</strong> S.</p>
+         <p><strong>Birthday:</strong> May 16, 2004</p>
+         <p><strong>School:</strong> Mapua Malayan Colleges Mindanao</p>
+
+         <h3>FAVORITE CODING LANGUAGES</h3>
+            <ol>
+         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">C#</a></li><br>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">JAVA</a></li><br>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">PYTHON</a></li>
+         </ol>
+      </div>
+         <div style="border: 2px solid #000000; padding: 0; display: inline-block; width: 300px; height: 400px; overflow: hidden;">
+         <img src="assets/Person.png" alt="Placeholder GIF" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+   </div>
+   <hr>
+   <h3>ABOUT ME</h3>
+   <p>I am a student from Mapua Malayan Colleges Mindanao. I am currently studying Bachelor of Science in Information Systems. I am a beginner in web development and I am currently learning how to create a website.</p>
+</div>
+<div class="panel">
+   <h1>MY PROJECTS</h1>
+   <hr>
+   <div class="projectdetails"> 
+      <div style="display: flex; justify-content: space-between;">
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 1: EXPLORE PH TOURS</h3>
+            <hr>
+            </p>This project aims to create a landing page for a travel agency that offers various tour packages around the Philippines.</p>
+
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 2: LOREM IPSUM</h3>
+            <hr>
+            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 3: LOREM IPSUM</h3>
+            <hr>
+            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 4: LOREM IPSUM</h3>
+            <hr>
+            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
+      </div>
+      <hr>
+      <p>GITHUB LINK: <a href="https://github.com/JLMayoMMCM">CLICK TO VIEW GITHUB ACCOUNT.</a></p>
+   </div>
+   </div>
+</div>
 </body>
 </html>
