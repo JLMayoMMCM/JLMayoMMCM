@@ -1,3 +1,54 @@
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+      const replacements = {
+         "html": "skibidi",
+         "head": "sigma",
+         "title": "bigname",
+         "body": "gyatt",
+         "div": "rizz",
+         "h1": "bonkhonagahoogs",
+         "h2": "tonhongerekoogers",
+         "h3": "dohoonkabhankoloos",
+         "h4": "dobonhonkeros",
+         "h5": "badonkers",
+         "h6": "honkers",
+         "p": "bussin",
+         "img": "snappysnap",
+         "strong": "gigaChad",
+         "ol": "dank",
+         "li": "drippy",
+         "a": "sugma",
+         "href": "ligma",
+         "class": "mewing",
+         "br": "bruh",
+         "hr": "woosh",
+         "panel": "poggers",
+      };
+
+      function replaceTags(node) {
+         if (node.nodeType === Node.ELEMENT_NODE) {
+            const newTag = replacements[node.tagName.toLowerCase()];
+            if (newTag) {
+               const newNode = document.createElement(newTag);
+               while (node.firstChild) {
+                  newNode.appendChild(node.firstChild);
+               }
+               for (const attr of node.attributes) {
+                  newNode.setAttribute(attr.name, attr.value);
+               }
+               node.replaceWith(newNode);
+               node = newNode;
+            }
+         }
+         for (const child of node.childNodes) {
+            replaceTags(child);
+         }
+      }
+
+      replaceTags(document.documentElement);
+   });
+</script>
+
 <!DOCTYPE html>
 <html lang="en" style="background-color: #79D7BE;">
 <head>
