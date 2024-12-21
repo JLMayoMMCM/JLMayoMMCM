@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXPLORER Tours PH</title>
     <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
         body {
-            font-family: Arial, sa ns-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.5;
             margin: 0;
             padding: 0;
@@ -15,12 +25,22 @@
             background-color: #f8f9fa;
             padding: 20px;
             text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
         header img {
             max-width: 100px;
         }
-        header h1 {
+        h2 {
             margin: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            margin: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            animation: fadeIn 2s ease-in-out;
         }
         .banner {
             width: 100%;
@@ -31,6 +51,7 @@
             align-items: center;
             justify-content: center;
             font-size: 24px;
+            animation: fadeIn 2s ease-in-out;
         }
         .main {
             padding: 20px;
@@ -42,20 +63,23 @@
             padding: 10px;
             text-align: center;
             cursor: pointer;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .section {
             margin-bottom: 20px;
             justify-content: space-between;
+            animation: fadeIn 2s ease-in-out;
         }
         .frame {
             display: flex;
             justify-content: space-between;
-
+            animation: slideIn 1s ease-in-out;
         }
 
         .boxedframe {
             border: #000000 1px solid;
+            transition: transform 0.3s ease-in-out;
             margin: 10px;
             padding: 10px;
             flex: 1;
@@ -69,13 +93,68 @@
             text-align: center; 
             color: white; 
             text-decoration: none;
+            animation: slideIn 1s ease-in-out;
+        }
+        .boxedframe:hover {
+            transform: scale(1.05);
+        }
+
+        .contactframe {
+            transition: transform 0.3s ease-in-out;
+            margin: 10px;
+            flex: 1;
+            text-align: center;
+            background-size: cover; 
+            background-position: center; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            text-decoration: none;
+            animation: slideIn 1s ease-in-out;
+        }
+        .contactframe:hover {
+            transform: scale(1.05);
         }
         
         .contact {
             background-color: #f8f9fa;
             padding: 20px;
             text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
+        .itemframe {
+            animation: fadeIn 2s ease-in-out;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .itemframe:hover {
+            transform: scale(1.1) translateX(10px);
+        }
+
+        ul li {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul li:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        ul li:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        ul li:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        ul li:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        ul li:nth-child(5) {
+            animation-delay: 2s;
+        }
+        
     </style>
 </head>
 <body>
@@ -103,36 +182,36 @@
             <h2>Promotions</h2>
             <hr>
             <ul>
-                <li><a href="Extra_Pages\Promo1.htm">"3+1 Free" group packages.</a></li>
-                <li><a href="Extra_Pages\Promo2.htm">20% discount on bookings made at least a month in advance.</a></li>
-                <li><a href="Extra_Pages\Promo3.htm">Special weekend rates for island hopping in Cebu.</a></li>
+                <li class="itemframe"><a href="Extra_Pages\Promo1.htm">"3+1 Free" group packages.</a></li>
+                <li class="itemframe"><a href="Extra_Pages\Promo2.htm">20% discount on bookings made at least a month in advance.</a></li>
+                <li class="itemframe"><a href="Extra_Pages\Promo3.htm">Special weekend rates for island hopping in Cebu.</a></li>
             </ul>
         </div>
         
-        <div class="section"></div>
+        <div class="section">
             <h2>Popular Packages</h2>
             <hr>
             <div class="frame">
-                <a href="https://en.wikipedia.org/wiki/Intramuros" class="boxedframe manila" style="background-image: url(https://gttp.images.tshiftcdn.com/253829/x/0/intramuros-travel-guide-how-to-go-to-places-to-visit-things-to-do-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);">
-                    <div class="text-content">
-                        <h3>Manila</h3>
-                        <p>Historic Intramuros Tour with Food Crawl</p>
-                    </div>
-                </a>
-                
-                <a href="https://en.wikipedia.org/wiki/Cebu_City" class="boxedframe cebu" style="background-image: url(https://www.travelingcebu.com/images/whaleshark-june2016-abe.jpg);">
-                    <div class="text-content">
-                        <h3>Cebu</h3>
-                        <p>Whale Shark Watching and Kawasan Falls Adventure</p>
-                    </div>
-                </a>
+            <a href="https://en.wikipedia.org/wiki/Intramuros" class="boxedframe manila" style="background-image: url(https://gttp.images.tshiftcdn.com/253829/x/0/intramuros-travel-guide-how-to-go-to-places-to-visit-things-to-do-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);">
+                <div class="text-content">
+                <h3>Manila</h3>
+                <p>Historic Intramuros Tour with Food Crawl</p>
+                </div>
+            </a>
+            
+            <a href="https://en.wikipedia.org/wiki/Cebu_City" class="boxedframe cebu" style="background-image: url(https://www.travelingcebu.com/images/whaleshark-june2016-abe.jpg);">
+                <div class="text-content">
+                <h3>Cebu</h3>
+                <p>Whale Shark Watching and Kawasan Falls Adventure</p>
+                </div>
+            </a>
 
-                <a href="https://en.wikipedia.org/wiki/Davao_City" class="boxedframe" style="background-image: url(https://media.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2022%2F11%2F24%2F397073.jpg);"> 
-                    <div class="text-content">
-                        <h3>Davao</h3>
-                        <p>Mt. Apo Climbing Experience</p>
-                    </div>
-                </a>
+            <a href="https://en.wikipedia.org/wiki/Davao_City" class="boxedframe" style="background-image: url(https://media.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2022%2F11%2F24%2F397073.jpg);"> 
+                <div class="text-content">
+                <h3>Davao</h3>
+                <p>Mt. Apo Climbing Experience</p>
+                </div>
+            </a>
             </div>
         </div>
         <div class="cta">
@@ -141,9 +220,9 @@
     </div>
     <div class="contact">
         <h2>Contact Details for Branches</h2>
-        <p>Manila: <a href="tel:+631234567">(+63) 123-4567</a></p>
-        <p>Cebu: <a href="tel:+632345678">(+63) 234-5678</a></p>
-        <p>Davao: <a href="tel:+633456789">(+63) 345-6789</a></p>
+        <p class="contactframe">Manila: <a href="tel:+631234567">(+63) 123-4567</a></p>
+        <p class="contactframe">Cebu: <a href="tel:+632345678">(+63) 234-5678</a></p>
+        <p class="contactframe">Davao: <a href="tel:+633456789">(+63) 345-6789</a></p>
     </div>
 </body>
 </html>
