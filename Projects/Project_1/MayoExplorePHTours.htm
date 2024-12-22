@@ -1,195 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPLORER Tours PH</title>
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXPLORER Tours PH</title>
+        <style>
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
 
-        @keyframes slideIn {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(0); }
-        }
+            body {
+                font: 16px Helvetica;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+            }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-        header img {
-            max-width: 100px;
-        }
-        h2 {
-            margin: 10px 0;
-            animation: fadeIn 2s ease-in-out;
-        }
+            .banner {
+                width: 100%;
+                height: 120px;
+                background-color: #007bff;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                animation: fadeIn 2s ease-in-out;
+            }
 
-        h2 {
-            margin: 10px 0;
-            animation: fadeIn 2s ease-in-out;
-        }
-        header p {
-            animation: fadeIn 2s ease-in-out;
-        }
-        .banner {
-            width: 100%;
-            height: 200px;
-            background-color: #007bff;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .main {
-            padding: 20px;
-        }
+            .titleheader {
+                padding: 20px;
+                text-align: center;
+                animation: fadeIn 2s ease-in-out;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow for better readability */
+            }
 
-        .cta {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            animation: fadeIn 2s ease-in-out;
-        }
+            .sectionheader {
+                font: 24px verdana;
+                font-weight: bold;
+                padding: 10px;
+                text-shadow: 1px 1px 2px #000;
+                animation: fadeIn 2s ease-in-out;
+            }
 
-        .section {
-            margin-bottom: 20px;
-            justify-content: space-between;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .frame {
-            display: flex;
-            justify-content: space-between;
-            animation: slideIn 1s ease-in-out;
-        }
+            .titleheader img {
+                max-width: 100px;
+            }
 
-        .boxedframe {
-            border: #000000 1px solid;
-            transition: transform 0.3s ease-in-out;
-            margin: 10px;
-            padding: 10px;
-            flex: 1;
-            text-shadow: 4px 2px 2px black;
-            text-align: center;
-            background-size: cover; 
-            background-position: center; 
-            height: 300px; display: flex;
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            color: white; 
-            text-decoration: none;
-            animation: slideIn 1s ease-in-out;
-        }
-        .boxedframe:hover {
-            transform: scale(1.05);
-        }
+            .contentlist {
+                font: 18px verdana;
+                animation: slideIn 1s ease-in-out;
+            }
 
-        .contactframe {
-            transition: transform 0.3s ease-in-out;
-            margin: 10px;
-            flex: 1;
-            text-align: center;
-            background-size: cover; 
-            background-position: center; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            text-decoration: none;
-            animation: slideIn 1s ease-in-out;
-        }
-        .contactframe:hover {
-            transform: scale(1.05);
-        }
-        
-        .contact {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .itemframe {
-            animation: fadeIn 2s ease-in-out;
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-        .itemframe:hover {
-            transform: scale(1.1) translateX(10px);
-        }
+            @keyframes slideIn {
+                from {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
 
-        ul li {
-            animation: fadeIn 1s ease-in-out;
-        }
+            .framebox {
+                border: 1px solid #ccc;
+                background-color: beige;
+                padding: 10px;
+                margin: 10px;
+            }
 
-        ul li:nth-child(1) {
-            animation-delay: 0s;
-        }
+            .contentlist li {
+                opacity: 0;
+                line-height: 2;
+                text-shadow: 1px 1px 1px #000;
+                animation: fadeIn 1s ease-in-out forwards;
+            }
 
-        ul li:nth-child(2) {
-            animation-delay: 0.5s;
-        }
+            .contentlist li:nth-child(1) {
+                animation-delay: 0.5s;
+            }
 
-        ul li:nth-child(3) {
-            animation-delay: 1s;
-        }
+            .contentlist li:nth-child(2) {
+                animation-delay: 1s;
+            }
 
-        ul li:nth-child(4) {
-            animation-delay: 1.5s;
-        }
+            .contentlist li:nth-child(3) {
+                animation-delay: 1.5s;
+            }
 
-        ul li:nth-child(5) {
-            animation-delay: 2s;
-        }
-        
-    </style>
-</head>
-<body>
-    <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDS1EKEWBP0O-9BlZReM5-AzeIcLZAwWCVg&s" alt="EXPLORER Tours PH Logo" style="max-width: 1920px;">
-        <h1>EXPLORER Tours PH</h1>
-        <p>Your Gateway to the Philippines!</p>
-    </header>
-    <div class="banner">
-        <p>Explore the beauty of the Philippines with us!</p>
-    </div>
-    <div class="main">
-        <div class="section">
-            <h2>Services Offered</h2>
+            .contentlist li:nth-child(4) {
+                animation-delay: 2s;
+            }
+
+            .contentlist li:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+
+            .hovereffect {
+                background-color: #17a2b8;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                animation: fadeIn 2s ease-in-out;
+                transition: transform 0.3s ease-in-out;
+            }
+            .hovereffect:hover {
+                background-color: #0b5c75;
+                transform: scale(1.1);
+            }
+
+            .frame {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .frame:hover {
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="titleheader">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDS1EKEWBP0O-9BlZReM5-AzeIcLZAwWCVg&s" alt="EXPLORER Tours PH Logo" style="max-width: 1920px;" alt="Explorer Tours PH">
+            <h2>EXPLORER Tours PH</h2>
+            <p>Explore the beauty of the Philippines with us!</p>
+        </header>
+        <div class="banner">
+            Your Gateway to the Philippines!
+        </div>
+        <div class="framebox">
+            <h3 class="sectionheader">SERVICES OFFERED:</h3>
             <hr>
-            <ul>
-                <li>Island Hopping Tours</li>
-                <li>Guided City Tours</li>
-                <li>Mountain Trekking Packages</li>
-                <li>Hotel and Transport Reservations</li>
-                <li>Customized Travel Itineraries</li>
+            <ul class="contentlist">
+                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Island Hopping Tours</a></li>
+                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Guided City Tours</a></li>
+                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Mountain Trekking Packages</a></li>
+                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Hotel and Transport Reservations</a></li>
+                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Customized Travel Itineraries</a></li>
             </ul>
         </div>
-        <div class="section">
-            <h2>Promotions</h2>
+
+        <div class="framebox">
+            <h3 class="sectionheader">TOUR PROMOS:</h3>
             <hr>
-            <ul>
-                <li class="itemframe"><a href="Extra_Pages\Promo1.htm">"3+1 Free" group packages.</a></li><br>
-                <li class="itemframe"><a href="Extra_Pages\Promo2.htm">20% discount on bookings made at least a month in advance.</a></li><br>
-                <li class="itemframe"><a href="Extra_Pages\Promo3.htm">Special weekend rates for island hopping in Cebu.</a></li><br>
+            <ul class="contentlist">
+                <li class="hovereffect"><a href="Extra_Pages\Promo1.htm" style="text-decoration: none; color: white;">"3+1 Free" group packages.</a></li><br>
+                <li class="hovereffect"><a href="Extra_Pages\Promo2.htm" style="text-decoration: none; color: white;">20% discount on bookings made at least a month in advance.</a></li><br>
+                <li class="hovereffect"><a href="Extra_Pages\Promo3.htm" style="text-decoration: none; color: white;">Special weekend rates for island hopping in Cebu.</a></li><br>
             </ul>
         </div>
-        
-        <div class="section">
-            <h2>Popular Packages</h2>
+
+        <div class="framebox">
+            <h2 class="sectionheader">Popular Packages</h2>
             <hr>
             <div class="frame">
             <a href="https://en.wikipedia.org/wiki/Intramuros" class="boxedframe manila" style="background-image: url(https://gttp.images.tshiftcdn.com/253829/x/0/intramuros-travel-guide-how-to-go-to-places-to-visit-things-to-do-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);">
@@ -214,15 +181,33 @@
             </a>
             </div>
         </div>
-        <div class="cta">
-            <p>Book your next adventure with us today! Limited slots available for promo packages.</p>
-        </div>
-    </div>
-    <div class="contact">
-        <h2>Contact Details for Branches</h2>
-        <p class="contactframe">Manila: <a href="tel:+631234567">(+63) 123-4567</a></p>
-        <p class="contactframe">Cebu: <a href="tel:+632345678">(+63) 234-5678</a></p>
-        <p class="contactframe">Davao: <a href="tel:+633456789">(+63) 345-6789</a></p>
-    </div>
-</body>
+        <style>
+            .boxedframe {
+            width: 30%;
+            height: 200px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            }
+
+            .boxedframe .text-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            }
+
+            .frame {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+        </style>
+    </body>
 </html>
