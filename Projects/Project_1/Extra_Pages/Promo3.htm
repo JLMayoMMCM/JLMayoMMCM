@@ -12,14 +12,16 @@
         line-height: 1.5;
         margin: 0;
         padding: 0;
+        animation: fadeIn 1s ease-out;
     }
     header {
-        background-color: #f8f9fa;
+        background-color: #343a40;
         padding: 20px;
         text-align: center;
     }
     header h1 {
         margin: 10px 0;
+        color: #ffffff;
     }
     main {
         padding: 20px;
@@ -28,26 +30,27 @@
         margin-bottom: 20px;
     }
     h2 {
-        background-color: #28a745;
+        background-color: #007bff;
         width: 100%;
         color: white;
         padding: 10px;
         text-align: center;
     }
     h3 {
-        color: #28a745;
+        color: #007bff;
     }
     ul {
-        border: 1px solid #28a745;
+        border: 1px solid #007bff;
         width: 80%;
-        background-color:aliceblue;
+        background-color: aliceblue;
         list-style-type: none;
-        padding: 0;
+        padding: 10px;
     }
     footer {
-        background-color: #f8f9fa;
+        background-color: #343a40;
         padding: 10px;
         text-align: center;
+        color: #ffffff;
     }
     a {
         color: #007bff;
@@ -56,31 +59,18 @@
         color: #0056b3;
     }
 
-    .return{
+    .return {
         padding: 10px;
         text-align: center;
         cursor: pointer;
     }
-    @keyframes slideIn {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-        }
-
-        @keyframes fadeIn {
+    @keyframes fadeIn {
         from {
             opacity: 0;
         }
         to {
             opacity: 1;
         }
-        }
-
-        body {
-        animation: slideIn 1s ease-out;
     }
 </style>
 <body>
@@ -90,7 +80,7 @@
     <main>
         <section>
             <h2>Special weekend rates for island hopping in Cebu.</h2>
-            <p>Enjoy a special weekend rate for island hopping in Cebu with various discounts and packages for you to avail! <a href="#">Book now!</a></a></p>
+            <p>Enjoy a special weekend rate for island hopping in Cebu with various discounts and packages for you to avail! <a href="#">Book now!</a></p>
         </section>
         <section>
             <h3>Terms and Conditions</h3>
@@ -105,9 +95,9 @@
         </section>
         <section>
             <h3>For more inquiries</h3>
-            <p>For inquiries and bookings, contact us at <a href="tel:+639123456789">0912-345-6789</a> or email us at <a href="mailto: #">ExploreMorePH@gmail.com</a>.</p>
+            <p>For inquiries and bookings, contact us at <a href="tel:+639123456789">0912-345-6789</a> or email us at <a href="mailto:ExploreMorePH@gmail.com">ExploreMorePH@gmail.com</a>.</p>
         </section>
-        </main>
+    </main>
     <footer>
         <p>&copy; 2021 EXPLORER Tours PH. All rights reserved.</p>
     </footer>
