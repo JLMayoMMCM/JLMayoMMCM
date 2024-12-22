@@ -1,188 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EXPLORER Tours PH</title>
-        <style>
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORER Tours PH</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-            body {
-                font: 16px Helvetica;
-                line-height: 1;
-                margin: 0;
-                padding: 0;
-            }
-
-            .banner {
-                width: 100%;
-                height: 120px;
-                background-color: #007bff;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 24px;
-                animation: fadeIn 2s ease-in-out;
-            }
-
-            .titleheader {
-                padding: 20px;
-                text-align: center;
-                animation: fadeIn 2s ease-in-out;
-                color: white;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow for better readability */
-            }
-
-            .sectionheader {
-                font: 24px verdana;
-                font-weight: bold;
-                padding: 10px;
-                text-shadow: 1px 1px 2px #000;
-                animation: fadeIn 2s ease-in-out;
-            }
-
-            .titleheader img {
-                max-width: 100px;
-            }
-
-            .contentlist {
-                font: 18px verdana;
-                animation: slideIn 1s ease-in-out;
-            }
-
-            @keyframes slideIn {
-                from {
-                    transform: translateX(-100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-
-            .framebox {
-                border: 1px solid #ccc;
-                background-color: beige;
-                padding: 10px;
-                margin: 10px;
-            }
-
-            .contentlist li {
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
                 opacity: 0;
-                line-height: 2;
-                text-shadow: 1px 1px 1px #000;
-                animation: fadeIn 1s ease-in-out forwards;
             }
-
-            .contentlist li:nth-child(1) {
-                animation-delay: 0.5s;
+            to {
+                transform: translateX(0);
+                opacity: 1;
             }
+        }
 
-            .contentlist li:nth-child(2) {
-                animation-delay: 1s;
-            }
+        body {
+            font: 16px Helvetica;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+        }
 
-            .contentlist li:nth-child(3) {
-                animation-delay: 1.5s;
-            }
+        .banner {
+            width: 100%;
+            height: 120px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-            .contentlist li:nth-child(4) {
-                animation-delay: 2s;
-            }
+        .titleheader {
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-            .contentlist li:nth-child(5) {
-                animation-delay: 2.5s;
-            }
+        .titleheader img {
+            max-width: 100px;
+        }
 
-            .hovereffect {
-                background-color: #17a2b8;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                cursor: pointer;
-                animation: fadeIn 2s ease-in-out;
-                transition: transform 0.3s ease-in-out;
-            }
-            .hovereffect:hover {
-                background-color: #0b5c75;
-                transform: scale(1.1);
-            }
+        .sectionheader {
+            font: 24px verdana;
+            font-weight: bold;
+            padding: 10px;
+            text-shadow: 1px 1px 2px #000;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-            .frame {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .frame:hover {
-                transform: scale(1.1);
-            }
-        </style>
-    </head>
-    <body>
-        <header class="titleheader">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDS1EKEWBP0O-9BlZReM5-AzeIcLZAwWCVg&s" alt="EXPLORER Tours PH Logo" style="max-width: 1920px;" alt="Explorer Tours PH">
-            <h2>EXPLORER Tours PH</h2>
-            <p>Explore the beauty of the Philippines with us!</p>
-        </header>
-        <div class="banner">
-            Your Gateway to the Philippines!
-        </div>
-        <div class="framebox">
-            <h3 class="sectionheader">SERVICES OFFERED:</h3>
-            <hr>
-            <ul class="contentlist">
-                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Island Hopping Tours</a></li>
-                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Guided City Tours</a></li>
-                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Mountain Trekking Packages</a></li>
-                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Hotel and Transport Reservations</a></li>
-                <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Customized Travel Itineraries</a></li>
-            </ul>
-        </div>
+        .contentlist {
+            font: 18px verdana;
+            animation: slideIn 1s ease-in-out;
+        }
 
-        <div class="framebox">
-            <h3 class="sectionheader">TOUR PROMOS:</h3>
-            <hr>
-            <ul class="contentlist">
-                <li class="hovereffect"><a href="Extra_Pages\Promo1.htm" style="text-decoration: none; color: white;">"3+1 Free" group packages.</a></li><br>
-                <li class="hovereffect"><a href="Extra_Pages\Promo2.htm" style="text-decoration: none; color: white;">20% discount on bookings made at least a month in advance.</a></li><br>
-                <li class="hovereffect"><a href="Extra_Pages\Promo3.htm" style="text-decoration: none; color: white;">Special weekend rates for island hopping in Cebu.</a></li><br>
-            </ul>
-        </div>
+        .framebox {
+            border: 1px solid #ccc;
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            transition: transform 0.3s ease-in-out;
+        }
 
-        <div class="framebox">
-            <h2 class="sectionheader">Popular Packages</h2>
-            <hr>
-            <div class="frame">
-            <a href="https://en.wikipedia.org/wiki/Intramuros" class="boxedframe manila" style="background-image: url(https://gttp.images.tshiftcdn.com/253829/x/0/intramuros-travel-guide-how-to-go-to-places-to-visit-things-to-do-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);">
-                <div class="text-content">
-                <h3>Manila</h3>
-                <p>Historic Intramuros Tour with Food Crawl</p>
-                </div>
-            </a>
-            
-            <a href="https://en.wikipedia.org/wiki/Cebu_City" class="boxedframe cebu" style="background-image: url(https://www.travelingcebu.com/images/whaleshark-june2016-abe.jpg);">
-                <div class="text-content">
-                <h3>Cebu</h3>
-                <p>Whale Shark Watching and Kawasan Falls Adventure</p>
-                </div>
-            </a>
+        .contentlist li {
+            opacity: 0;
+            line-height: 1;
+            padding: 10px;
+            line-height: 2;
+            text-shadow: 1px 1px 1px #000;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
 
-            <a href="https://en.wikipedia.org/wiki/Davao_City" class="boxedframe" style="background-image: url(https://media.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2022%2F11%2F24%2F397073.jpg);"> 
-                <div class="text-content">
-                <h3>Davao</h3>
-                <p>Mt. Apo Climbing Experience</p>
-                </div>
-            </a>
-            </div>
-        </div>
-        <style>
-            .boxedframe {
+        .contentlist li:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .contentlist li:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .contentlist li:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        .contentlist li:nth-child(4) {
+            animation-delay: 2s;
+        }
+
+        .contentlist li:nth-child(5) {
+            animation-delay: 2.5s;
+        }
+
+        .hovereffect {
+            background-color: #17a2b8;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hovereffect:hover {
+            background-color: #0b5c75;
+            transform: scale(1.1);
+        }
+
+        .boxedframe {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
             width: 30%;
             height: 200px;
             margin: 10px;
@@ -194,20 +133,116 @@
             text-decoration: none;
             position: relative;
             overflow: hidden;
-            }
+        }
 
-            .boxedframe .text-content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            }
-
-            .frame {
+        .frame {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            }
-        </style>
-    </body>
+            text-align: center;
+        }
+
+        .boxedframe:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cta {
+            background-color: #007bff;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contactframe:hover {
+            transform: scale(1.05);
+        }
+
+        .contact {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .textcontent {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header class="titleheader">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDS1EKEWBP0O-9BlZReM5-AzeIcLZAwWCVg&s" alt="EXPLORER Tours PH Logo" style="max-width: 1920px;">
+        <h2>EXPLORER Tours PH</h2>
+        <p>Explore the beauty of the Philippines with us!</p>
+    </header>
+    <div class="banner">
+        Your Gateway to the Philippines!
+    </div>
+    <div class="framebox">
+        <h3 class="sectionheader">SERVICES OFFERED:</h3>
+        <hr>
+        <ul class="contentlist">
+            <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Island Hopping Tours</a></li>
+            <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Guided City Tours</a></li>
+            <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Mountain Trekking Packages</a></li>
+            <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Hotel and Transport Reservations</a></li>
+            <li class="hovereffect"><a href="#" style="text-decoration: none; color: white;">Customized Travel Itineraries</a></li>
+        </ul>
+    </div>
+
+    <div class="framebox">
+        <h3 class="sectionheader">TOUR PROMOS:</h3>
+        <hr>
+        <ul class="contentlist">
+            <li class="hovereffect"><a href="Extra_Pages/Promo1.htm" style="text-decoration: none; color: white;">"3+1 Free" group packages.</a></li>
+            <li class="hovereffect"><a href="Extra_Pages/Promo2.htm" style="text-decoration: none; color: white;">20% discount on bookings made at least a month in advance.</a></li>
+            <li class="hovereffect"><a href="Extra_Pages/Promo3.htm" style="text-decoration: none; color: white;">Special weekend rates for island hopping in Cebu.</a></li>
+        </ul>
+    </div>
+
+    <div class="framebox">
+        <h3 class="sectionheader">TOUR PACKAGES:</h3>
+        <hr>
+        <div class="frame">
+            <a href="https://en.wikipedia.org/wiki/Intramuros" class="boxedframe manila" style="background-image: url(https://gttp.images.tshiftcdn.com/253829/x/0/intramuros-travel-guide-how-to-go-to-places-to-visit-things-to-do-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);">
+                <div class="textcontent">
+                    <h3>Manila</h3>
+                    <p>Historic Intramuros Tour with Food Crawl</p>
+                </div>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Cebu_City" class="boxedframe cebu" style="background-image: url(https://www.travelingcebu.com/images/whaleshark-june2016-abe.jpg);">
+                <div class="textcontent">
+                    <h3>Cebu</h3>
+                    <p>Whale Shark Watching and Kawasan Falls Adventure</p>
+                </div>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Davao_City" class="boxedframe" style="background-image: url(https://media.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2022%2F11%2F24%2F397073.jpg);">
+                <div class="textcontent">
+                    <h3>Davao</h3>
+                    <p>Mt. Apo Climbing Experience</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="cta">
+        <p>Book your next adventure with us today! Limited slots available for promo packages.</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Details for Branches</h2>
+        <p class="contactframe">Manila: <a href="tel:+631234567">(+63) 123-4567</a></p>
+        <p class="contactframe">Cebu: <a href="tel:+632345678">(+63) 234-5678</a></p>
+        <p class="contactframe">Davao: <a href="tel:+633456789">(+63) 345-6789</a></p>
+    </div>
+</body>
 </html>
