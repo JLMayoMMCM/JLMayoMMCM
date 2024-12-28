@@ -5,441 +5,409 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+        .header {
+            background-color: #343a40;
+            padding: 1px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+        .course-1 {
+            position: relative;
+            background-color: #ff9999;
+        }
+        .course-2 {
+            position: relative;
+            background-color: #99ff99;
+        }
+        .course-3 {
+            position: relative;
+            background-color: #9999ff;
+        }
+        .course-4 {
+            position: relative;
+            background-color: #ffff99;
+        }
+        .course-5 {
+            position: relative;
+            background-color: #ffcc99;
+        }
+        .course-6 {
+            position: relative;
+            background-color: #cc99ff;
+        }
+        .course-7 {
+            position: relative;
+            background-color: #99ffff;
+        }
+        .course-8 {
+            position: relative;
+            background-color: #ff99cc;
+        }
+        .frame-container {
+            width: 90%;
+            height: 800px;
+            margin: 20px auto;
+            border: 2px solid #000000;
+            overflow: auto;
+        }
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+        td {
+            height: 120px;
+        }
+        .course-details {
+            border: 5px solid #cccccc;
+            width: 200px;
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            z-index: 1;
+            top: 100%;
+            left: 120%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        thead th {
+            position: sticky;
+            top: 0;
+            
+            z-index: 2;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-    }
-    .header {
-        background-color: #343a40;
-        padding: 1px;
-        text-align: center;
-    }
-
-    .header h1 {
-        margin: 10px 0;
-        color: #ffffff;
-    }
-
-    .course-1 {
-        background-color: #ffcccc;
-    }
-
-    .course-2 {
-        background-color: #ccffcc;
-    }
-
-    .course-3 {
-        background-color: #ccccff;
-    }
-
-    .course-4 {
-        background-color: #ffffcc;
-    }
-
-    .course-5 {
-        background-color: #ffccff;
-    }
-
-    .course-6 {
-        background-color: #ccffff;
-    }
-
-    .tdHeader {
-        background-color: #343a40;
-        font-weight: 2;
-        color: #ffffff;
-    }
-
-    td {
-        height: 120px;
-        width: 180px;
-    }
-    th {
-        height: 40px;
-    }
-    p {
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    .course-1 {
-        background-color: #ffcccc;
-        position: relative;
-    }
-    .course-2 {
-        background-color: #ccffcc;
-        position: relative;
-    }
-    .course-3 {
-        background-color: #ccccff;
-        position: relative;
-    }
-    .course-4 {
-        background-color: #ccffff;
-        position: relative;
-    }
-    .course-5 {
-        background-color: #ffffcc;
-        position: relative;
-    }
-    .course-6 {
-        background-color: #ffccff;
-        position: relative;
-    }
-
-    .course-7 {
-        background-color: #1dffff;
-        position: relative;
-    }
-    .course-8 {
-        background-color: #ffff7c;
-        position: relative;
-    }
-
-    .course-1:hover .course-details,
-    .course-2:hover .course-details,
-    .course-3:hover .course-details,
-    .course-4:hover .course-details,
-    .course-5:hover .course-details,
-    .course-6:hover .course-details,
-    .course-7:hover .course-details,
-    .course-8:hover .course-details {
-        display: block;
-        animation: fadeIn 0.2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    .course-details {
-        border: 5px solid #cccccc;
-        width: 200px;
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        border: 1px solid #cccccc;
-        padding: 20px;
-        z-index: 1;
-        top: 100%;
-        left: 120%;
-        transform: translateX(-50%);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-</style>
-
 <body>
     <div class="header">
         <h1>Weekly Schedule</h1>
     </div>
-    <table border="1" style="width:100%; text-align:center;">
-        <thead>
-            <tr>
-                <th class="tdHeader">Time</th>
-                <th class="tdHeader">Monday</th>
-                <th class="tdHeader">Tuesday</th>
-                <th class="tdHeader">Wednesday</th>
-                <th class="tdHeader">Thursday</th>
-                <th class="tdHeader">Friday</th>
-                <th class="tdHeader">Saturday</th>
-                <th class="tdHeader">Sunday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="tdHeader">7:00 - 8:15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">8:15 - 9:30</td>
-                <td></td>
-                <td></td>
-                <td class="course-3">
-                    <h5>IS-105</h5>
-                    <h5>Enterprise Architecture</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Mary Grace Sandoval</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23546_1/outline">Link to Course</a>
-                </td>
-                <td class="course-6">
-                    <h5>IS-107</h5>
-                    <h5>IS Strategy, Management, and Aqcuisition</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Mary Grace Sandoval</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23545_1/outline">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">9:30 - 10:45</td>
-                <td></td>
-                <td></td>
-                <td class="course-3">
-                    <h5>IS-105</h5>
-                    <h5>Enterprise Architecture</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Mary Grace Sandoval</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23546_1/outline">Link to Course</a>
-                </td>
-                <td class="course-6">
-                    <h5>IS-107</h5>
-                    <h5>IS Strategy, Management, and Aqcuisition</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Mary Grace Sandoval</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23545_1/outlinef">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">10:45 - 12:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="course-7">
-                    <h5>CS-107 Laboratory</h5>
-                    <h5>Information Management (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Martzel Baste</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">12:00 - 1:15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="course-7">
-                    <h5>CS-107 Laboratory</h5>
-                    <h5>Information Management (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Martzel Baste</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">1:15 - 2:30</td>
-                <td class="course-1">
-                    <h5>HUM-039<h5>
-                    <h5>Ethics</h5>
-                    
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Heidegger Jake Diacono</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23543_1/outline">Link to Course</a>
-                    </div>
-                </td>
-                <td></td>
-                <td class="course-1">
-                    <h5>HUM-039<h5>
-                    <h5>Ethics</h5>
-                    
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Heidegger Jake Diacono</p>
-                        <p>Room: V407</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23543_1/outline">Link to Course</a>
-                    </div>
-                </td>
-                <td class="course-4">
-                    <h5>CS-107</h5>
-                    <h5>Information Management (Lecture)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Martzel Baste</p>
-                        <p>Room: R416</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23542_1/outline">Link to Course</a>
-                </td>
-                <td class="course-7">
-                    <h5>CS-107 Laboratory</h5>
-                    <h5>Information Management (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Martzel Baste</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">2:30 - 3:45</td>
-                <td class="course-2">
-                    <h5>SS-086</h5>
-                    <h5>Gender and Society</h5>
-
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Weila Ignalig</p>
-                        <p>Room: V407</p>
-                        <a href="https://www.google.com">Link to Course</a>
-                    </div>
-                </td>
-                <td></td>
-                <td class="course-2">
-                    <h5>SS-086</h5>
-                    <h5>Gender and Society</h5>
-
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Weila Ignalig</p>
-                        <p>Room: V407</p>
-                        <a href="https://www.google.com">Link to Course</a>
-                    </div>
-                </td>
-                <td class="course-4">
-                    <h5>CS-107</h5>
-                    <h5>Information Management (Lecture)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Martzel Baste</p>
-                        <p>Room: R416</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23542_1/outline">Link to Course</a>
-                </td>
-                <td class="course-8">
-                    <h5>IT-103 Laboratory</h5>
-                    <h5>Web Programming (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Clyde Balaman</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
-                    </div>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">3:45 - 5:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="course-8">
-                    <h5>IT-103 Laboratory</h5>
-                    <h5>Web Programming (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Clyde Balaman</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
-                    </div>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">5:00 - 6:15</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="course-8">
-                    <h5>IT-103 Laboratory</h5>
-                    <h5>Web Programming (Laboratory)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Clyde Balaman</p>
-                        <p>Room: R307</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
-                    </div>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">6:15 - 7:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="course-5">
-                    <h5>IT-103</h5>
-                    <h5>Web Programming (Lecture)</h5>
-                    <div class="course-details">
-                        <p class="header-h1">Course Details</p>
-                        <hr>
-                        <p>Instructor: Clyde Balaman</p>
-                        <p>Room: R516</p>
-                        <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24065_1/outline">Link to Course</a>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">7:30 - 8:45</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="tdHeader">8:45 - 10:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    </style>
+    <div class="frame-container">
+        <table border="1" style="width:100%; text-align:center;">
+            <thead>
+                <tr>
+                    <th class="tdHeader">Time</th>
+                    <th class="tdHeader">Monday</th>
+                    <th class="tdHeader">Tuesday</th>
+                    <th class="tdHeader">Wednesday</th>
+                    <th class="tdHeader">Thursday</th>
+                    <th class="tdHeader">Friday</th>
+                    <th class="tdHeader">Saturday</th>
+                    <th class="tdHeader">Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tdHeader">7:00 - 8:15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">8:15 - 9:30</td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-3">
+                        <h5>IS-105</h5>
+                        <h5>Enterprise Architecture</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Mary Grace Sandoval</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23546_1/outline">Link to Course</a>
+                    </td>
+                    <td class="course-6">
+                        <h5>IS-107</h5>
+                        <h5>IS Strategy, Management, and Aqcuisition</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Mary Grace Sandoval</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23545_1/outline">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">9:30 - 10:45</td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-3">
+                        <h5>IS-105</h5>
+                        <h5>Enterprise Architecture</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Mary Grace Sandoval</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23546_1/outline">Link to Course</a>
+                    </td>
+                    <td class="course-6">
+                        <h5>IS-107</h5>
+                        <h5>IS Strategy, Management, and Aqcuisition</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Mary Grace Sandoval</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23545_1/outlinef">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">10:45 - 12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-7">
+                        <h5>CS-107 Laboratory</h5>
+                        <h5>Information Management (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Martzel Baste</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">12:00 - 1:15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-7">
+                        <h5>CS-107 Laboratory</h5>
+                        <h5>Information Management (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Martzel Baste</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">1:15 - 2:30</td>
+                    <td class="course-1">
+                        <h5>HUM-039<h5>
+                        <h5>Ethics</h5>
+                        
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Heidegger Jake Diacono</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23543_1/outline">Link to Course</a>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="course-1">
+                        <h5>HUM-039<h5>
+                        <h5>Ethics</h5>
+                        
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Heidegger Jake Diacono</p>
+                            <p>Room: V407</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23543_1/outline">Link to Course</a>
+                        </div>
+                    </td>
+                    <td class="course-4">
+                        <h5>CS-107</h5>
+                        <h5>Information Management (Lecture)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Martzel Baste</p>
+                            <p>Room: R416</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23542_1/outline">Link to Course</a>
+                    </td>
+                    <td class="course-7">
+                        <h5>CS-107 Laboratory</h5>
+                        <h5>Information Management (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Martzel Baste</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23539_1/outline">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">2:30 - 3:45</td>
+                    <td class="course-2">
+                        <h5>SS-086</h5>
+                        <h5>Gender and Society</h5>
+    
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Weila Ignalig</p>
+                            <p>Room: V407</p>
+                            <a href="https://www.google.com">Link to Course</a>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="course-2">
+                        <h5>SS-086</h5>
+                        <h5>Gender and Society</h5>
+    
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Weila Ignalig</p>
+                            <p>Room: V407</p>
+                            <a href="https://www.google.com">Link to Course</a>
+                        </div>
+                    </td>
+                    <td class="course-4">
+                        <h5>CS-107</h5>
+                        <h5>Information Management (Lecture)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Martzel Baste</p>
+                            <p>Room: R416</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_23542_1/outline">Link to Course</a>
+                    </td>
+                    <td class="course-8">
+                        <h5>IT-103 Laboratory</h5>
+                        <h5>Web Programming (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Clyde Balaman</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">3:45 - 5:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-8">
+                        <h5>IT-103 Laboratory</h5>
+                        <h5>Web Programming (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Clyde Balaman</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">5:00 - 6:15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-8">
+                        <h5>IT-103 Laboratory</h5>
+                        <h5>Web Programming (Laboratory)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Clyde Balaman</p>
+                            <p>Room: R307</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24064_1/outline">Link to Course</a>
+                        </div>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">6:15 - 7:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="course-5">
+                        <h5>IT-103</h5>
+                        <h5>Web Programming (Lecture)</h5>
+                        <div class="course-details">
+                            <p class="header-h1">Course Details</p>
+                            <hr>
+                            <p>Instructor: Clyde Balaman</p>
+                            <p>Room: R516</p>
+                            <a href="https://malayanmindanao.blackboard.com/ultra/courses/_24065_1/outline">Link to Course</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">7:30 - 8:45</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tdHeader">8:45 - 10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center; margin: 20px;">
+        <a href="https://jlmayommcm.github.io/JLMayoMMCM/" style="text-decoration: none; color: #ffffff; background-color: #343a40; padding: 10px 20px; border-radius: 5px;">Return to Main Page</a>
+    </div>
 </body>
 </html>
+
