@@ -1,23 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>WEB PROGRAMMING PORTFOLIO</title>
-    <link rel="stylesheet" type="text/css" href="Assets\site_formatting.css">
-  </head>
-  <body>
-   <div class="content_menu_container">
-      <div class="content_menu">
-          <a href="#header_container" class="content_menu_item">Home</a>
-          <a href="#about_container" class="content_menu_item">About</a>
-          <a href="#project_container" class="content_menu_item">Projects</a>
-          <a href="#contact_container" class="content_menu_item">Contact</a>
-      </div>      
-   </div> 
+<html lang="en" style="background-color: #2c2c2c;"></html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My First Web Page (V1)</title>
+ <style>
+   body {
+     font-family: "Arial", sans-serif;
+     position: relative;
+   }
+   .banner {
+      line-height: 1.5;
+      background-color: #F6F4F0;
+      text-align: center;
+      top: 5%;
+      padding: 1.15%;
+      width: 100%;
+      font-size: 24px;
+   }
+   
+   .frame {
+      line-height: 1.5;
+      border: 2px solid #000000;
+      background-color: #F6F4F0;
+      padding: 2.5%;
+      width: 95%;
+      font-size: 18px;
+      text-align: justify;
+      position: relative;
+      top: 2.5%;
+      left: 51%;
+      transform: translateX(-50%);
+   }
 
-   <div class= "header_container" id= "header_container">
-      <div class= "header">
-         <img src="Assets/Person.png" alt="Person" class = "header_image" ></a>
-         <h1 class = "header_content">"We do not do it because it's easy. We do it because we thought it would be easy"</h1>
+   .panel {
+      line-height: 1.5;
+      border: 2px solid #000000;
+      background-color: #F6F4F0;
+      padding: 3.5%;
+      margin: 1%;
+      width: 45%;
+      font-size: 18px;
+      text-align: justify;
+      position: relative;
+      top: 2.5%;
+      left: 25%;
+      transform: translateX(-50%);
+   }
+
+   .projectdetails {
+      line-height: 1.5;
+      height: 100%;
+      font-size: 16px;
+   }
+ </style>
+</head>
+<body>
+<div class="banner">
+ <h1>WELCOME TO MY WORKING PROJECT WEBSITE</h1>
+ <hr>
+ <p>This is my first website. I am learning how to create a website.</p>
+</div>
+<br>
+<div class="frame">
+<div style="display: flex; justify-content: space-around;">
+<div class="panel">
+   <h1> PERSONAL INFORMATION</h1>
+   <hr>
+   <div style="display: flex; justify-content: space-between;">
+     <div>
+         <p><strong>Last Name:</strong> Mayo</p>
+         <p><strong>First Name:</strong> Jonathan Lance</p>
+         <p><strong>Middle Initial:</strong> S.</p>
+         <p><strong>Birthday:</strong> May 16, 2004</p>
+         <p><strong>School:</strong> Mapua Malayan Colleges Mindanao</p>
+
+         <h3>FAVORITE CODING LANGUAGES</h3>
+            <ol>
+         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">C#</a></li><br>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">JAVA</a></li><br>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">PYTHON</a></li>
+         </ol>
+      </div>
+         <div style="border: 2px solid #000000; padding: 0; display: inline-block; width: 300px; height: 400px; overflow: hidden;">
+          <img src="https://github.com/JLMayoMMCM/JLMayoMMCM/blob/main/Assets/Person.png?raw=true" alt="Placeholder GIF" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
    </div>
 
@@ -26,44 +92,23 @@
          <H1 class = "about_title" id= "about_container" >About Me</H1>
          <p class = "about_content">I am a Mapua Malayan Colleges Mindanao 2nd Year BSIS Student that has interests in the corporate side of technology.</p>
       </div>
-   </div>
+      <div style="display: flex; justify-content: space-between;">
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 3: LOREM IPSUM</h3>
+            <hr>
+            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-   <div class="project_container" id="project_container">
-      <h1 class="project_title">Projects</h1>
-      <div class="project_content">
-         <a href="Projects\MayoExplorePHTours.htm" class="project_box">
-            <h2 class="project_box_title">Project 1: ExplorePH</h2>
-            <p class="project_box_content">A default Landing Page for a tours business 
-               offering multiple deals and destinations using basic HTML functions and Limited
-               css styling.
-            </p>
-         </a>
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
+         <div style="border: 2px solid #000000; padding: 10px; width: 45%; background-color: #FFFFFF; margin: 10px;">
+            <h3>PROJECT 4: LOREM IPSUM</h3>
+            <hr>
+            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-         <a href="Projects\Project_2\MayoCourseSchedule.htm" class="project_box">
-            <h2 class="project_box_title">Project 2: Term Schedule</h2>
-            <p class="project_box_content">A basic website for schedule of activities and details
-               of the current 2nd semester of the school year 2024-2025.
-            </p>
-         </a>
-
-         <a href="project3.html" class="project_box">
-            <h2 class="project_box_title">Project 3</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
-
-         <a href="project4.html" class="project_box">
-            <h2 class="project_box_title">Project 4</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
-
+            <p><strong>PROJECT LINK</strong></p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK TO VIEW PROJECT</a>
+         </div>
       </div>
    </div>
 
