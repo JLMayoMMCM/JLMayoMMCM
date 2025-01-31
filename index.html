@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WEB PROGRAMMING PORTFOLIO</title>
-    <link rel="stylesheet" type="text/css" href="Assets\site_formatting.css">
-  </head>
-  <body>
+   <head>
+      <title>WEB PROGRAMMING PORTFOLIO</title>
+      <link rel="stylesheet" type="text/css" href="site_formatting.css">
+      <script src="Assets/navigation.js"></script>
+   </head>
+   <body>
    <div class="content_menu_container">
       <div class="content_menu">
-          <a href="#header_container" class="content_menu_item">Home</a>
-          <a href="#about_container" class="content_menu_item">About</a>
-          <a href="#project_container" class="content_menu_item">Projects</a>
-          <a href="#contact_container" class="content_menu_item">Contact</a>
+           <a href="#header_container" class="content_menu_item">Home</a>
+           <a href="#about_container" class="content_menu_item">About</a>
+           <a href="#project_container" class="content_menu_item">Projects</a>
+           <a href="#contact_container" class="content_menu_item">Contact</a>
       </div>      
    </div> 
 
@@ -22,41 +23,59 @@
    </div>
 
    <div class="about_container">
-      <h1 class="about_title">About Me</h1>
       <div class="about_panel">
-         <div class="about_left">
-            <h2 class="about_subtitle">Description</h2>
-            <p class="about_content">
-               I am a Mapua Malayan Colleges Mindanao 2nd Year BSIS Student with a keen interest in the corporate side of technology. 
-               I am passionate about software development, data analysis, and cybersecurity.
-            </p>
-            <ul class="about_details">
-               <li><strong>Full Name:</strong> Mayo, Jonathan Lance S.</li>
-               <li><strong>Age:</strong> 20</li>
-               <li><strong>Gender:</strong> Male</li>
-               <li><strong>Birthdate:</strong> 05/16/2004</li>
-            </ul>
-         </div>
-         <div class="about_right">
-            <div class="about_right_top">
-               <h2 class="about_subtitle">Programming Skills</h2>
-               <ul class="about_list">
-                  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Python</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">JavaScript</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Java</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML & CSS</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SQL</a></li>
+         <h1 class="about_title">About Me</h1>
+         <div class="about_panel_content">
+            <div class="about_left">
+               <h2 class="about_subtitle">Description</h2>
+               <p class="about_content">
+                  I am a Mapua Malayan Colleges Mindanao 2nd Year BSIS Student with a keen interest in the corporate side of technology. 
+                  I am passionate about software development, data analysis, and cybersecurity.
+               </p>
+               <ul class="about_details">
+                  <li><strong>Full Name:</strong> Mayo, Jonathan Lance S.</li>
+                  <li><strong>Age:</strong> 20</li>
+                  <li><strong>Gender:</strong> Male</li>
+                  <li><strong>Birthdate:</strong> 05/16/2004</li>
                </ul>
+
+               <h2 class="about_subtitle">Socials</h2>
+               <div class="socials">
+                  <a href="https://www.facebook.com" class="social_link">
+                     <img src="Assets/meta.png" alt="Facebook" class="social_icon">
+                  </a>
+                  <a href="https://www.reddit.com" class="social_link">
+                     <img src="Assets/reddit-logo.png" alt="Reddit" class="social_icon">
+                  </a>
+                  <a href="https://www.github.com" class="social_link">
+                     <img src="Assets/github.png" alt="GitHub" class="social_icon">
+                  </a>
+                  <a href="https://www.youtube.com" class="social_link">
+                     <img src="Assets/youtube.png" alt="YouTube" class="social_icon">
+                  </a>
+               </div>
             </div>
-            <div class="about_right_bottom">
-               <h2 class="about_subtitle">Interests</h2>
-               <ul class="about_list">
-                  <li>Software Development</li>
-                  <li>Data Analysis</li>
-                  <li>Cybersecurity</li>
-                  <li>Artificial Intelligence</li>
-                  <li>Web Development</li>
-               </ul>
+            <div class="about_right">
+               <div class="about_right_top">
+                  <h2 class="about_subtitle">Programming Skills</h2>
+                  <ul class="about_list">
+                      <li><a href="https://www.w3schools.com/python/">Python</a></li>
+                      <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+                      <li><a href="https://www.w3schools.com/java/">Java</a></li>
+                      <li><a href="https://www.w3schools.com/html/">HTML & CSS</a></li>
+                      <li><a href="https://www.w3schools.com/sql/">SQL</a></li>
+                  </ul>
+               </div>
+               <div class="about_right_bottom">
+                  <h2 class="about_subtitle">Interests</h2>
+                  <ul class="about_list">
+                      <li><a href="https://en.wikipedia.org/wiki/Software_development">Software Development</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Data_analysis">Data Analysis</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Cybersecurity">Cybersecurity</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Web_development">Web Development</a></li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
@@ -100,13 +119,31 @@
             </p>
          </a>
 
+         <a href="project5.html" class="project_box">
+            <h2 class="project_box_title">Project 5</h2>
+            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+               nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </a>
+
+         <a href="project6.html" class="project_box">
+            <h2 class="project_box_title">Project 6</h2>
+            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+               nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </a>
+
       </div>
    </div>
 
    <div class = "contact_container" id= "contact_container">
       <div class = "contact">
          <h1 class = "contact_title">Contact Me</h1>
-         <p class = "contact_content">Email: <a href="mailto:
+         <p class = "contact_content">Email: <a href="mailto: nathanmayo15@gmail.com">nathanmayo15@gmail.com</a></p>
    </div>
   </body>
 </html>
