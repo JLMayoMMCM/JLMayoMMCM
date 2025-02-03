@@ -1,149 +1,128 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>WEB PROGRAMMING PORTFOLIO</title>
-      <link rel="stylesheet" type="text/css" href="site_formatting.css">
-      <script src="Assets/navigation.js"></script>
-   </head>
-   <body>
-   <div class="content_menu_container">
-      <div class="content_menu">
-           <a href="#header_container" class="content_menu_item">Home</a>
-           <a href="#about_container" class="content_menu_item">About</a>
-           <a href="#project_container" class="content_menu_item">Projects</a>
-           <a href="#contact_container" class="content_menu_item">Contact</a>
-      </div>      
-   </div> 
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Portfolio</title>
+    <link rel = "stylesheet" type = "text/css" href="site_formatting.css">
+    <script src = "navigation.js" defer></script>
+</head>
+<body>
+    <header class = "header_container" id = "header_container">
+        <div class = "header">
+            <img src = "Assets/Person.png" alt = "Jonathan Lance S. Mayo" class="header_image">
+            <h1 class = "header_content">"Money can never buy time...wait til they hear these things called NVME."</h1>
+        </div>
+    </header>
 
-   <div class= "header_container" id= "header_container">
-      <div class= "header">
-         <img src="Assets/Person.png" alt="Person" class = "header_image" ></a>
-         <h1 class = "header_content">"We do not do it because it's easy. We do it because we thought it would be easy"</h1>
-      </div>
-   </div>
+    <nav class="content_menu_container">
+        <div class="content_menu">
+            <a href="#header_container" class="content_menu_item">Home</a>
+            <a href="#about_container" class="content_menu_item">About</a>
+            <a href="#project_container" class="content_menu_item">Projects</a>
+            <a href="#contact_container" class="content_menu_item">Contact</a>
+        </div>
+    </nav>
 
-   <div class="about_container">
-      <div class="about_panel">
-         <h1 class="about_title">About Me</h1>
-         <div class="about_panel_content">
-            <div class="about_left">
-               <h2 class="about_subtitle">Description</h2>
-               <p class="about_content">
-                  I am a Mapua Malayan Colleges Mindanao 2nd Year BSIS Student with a keen interest in the corporate side of technology. 
-                  I am passionate about software development, data analysis, and cybersecurity.
-               </p>
-               <ul class="about_details">
-                  <li><strong>Full Name:</strong> Mayo, Jonathan Lance S.</li>
-                  <li><strong>Age:</strong> 20</li>
-                  <li><strong>Gender:</strong> Male</li>
-                  <li><strong>Birthdate:</strong> 05/16/2004</li>
-               </ul>
+    <section class="about_container" id="about_container">
+        <div class="about_panel">
+            <h1 class="about_title">About Me</h1>
+            <div class="about_panel_content">
+                <div class="about_left">
+                    <h2 class="about_content_title">Description</h2>
+                    <p class="about_content">
+                        I am a Mapua Malayan Colleges Mindanao 2nd Year BSIS Student with a keen interest in the corporate side of technology. 
+                        I am passionate about software development, data analysis, and cybersecurity.
+                    </p>
+                    <ul class="about_details">
+                        <li><strong>Full Name:</strong> Jonathan Lance S. Mayo</li>
+                        <li><strong>Age:</strong> 20</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>Birthdate:</strong> May 16, 2004</li>
+                        <li><strong>Address:</strong> Juna Subdivision, Matina Crossing, Davao City, Davao del Sur</li>
+                        <li><strong>Course:</strong> Bachelor of Science in Information Systems</li>
+                        <li><strong>Year:</strong> 2nd Year</li>
+                        <li><strong>School:</strong> Mapua Malayan Colleges Mindanao</li>
+                    </ul>
 
-               <h2 class="about_subtitle">Socials</h2>
-               <div class="socials">
-                  <a href="https://www.facebook.com" class="social_link">
-                     <img src="Assets/meta.png" alt="Facebook" class="social_icon">
-                  </a>
-                  <a href="https://www.reddit.com" class="social_link">
-                     <img src="Assets/reddit-logo.png" alt="Reddit" class="social_icon">
-                  </a>
-                  <a href="https://www.github.com" class="social_link">
-                     <img src="Assets/github.png" alt="GitHub" class="social_icon">
-                  </a>
-                  <a href="https://www.youtube.com" class="social_link">
-                     <img src="Assets/youtube.png" alt="YouTube" class="social_icon">
-                  </a>
-               </div>
+                    <h2 class="about_content_title">Socials</h2>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" class="social_link" aria-label="Facebook">
+                            <img src="Assets/meta.png" alt="Facebook" class="social_icon">
+                        </a>
+                        <a href="https://www.reddit.com" class="social_link" aria-label="Reddit">
+                            <img src="Assets/reddit-logo.png" alt="Reddit" class="social_icon">
+                        </a>
+                        <a href="https://www.github.com" class="social_link" aria-label="GitHub">
+                            <img src="Assets/github.png" alt="GitHub" class="social_icon">
+                        </a>
+                        <a href="https://www.youtube.com" class="social_link" aria-label="YouTube">
+                            <img src="Assets/stack.png" alt="Stack" class="social_icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="about_right">
+                    <div class="about_right_top">
+                        <h2 class="about_content_title">SKILLS</h2>
+                        <a href="https://www.w3schools.com/python/" class="info">Python</a><br>
+                        <a href="https://www.w3schools.com/js/" class="info">JavaScript</a><br>
+                        <a href="https://www.w3schools.com/java/" class="info">Java</a><br>
+                        <a href="https://www.w3schools.com/html/" class="info">HTML & CSS</a><br>
+                        <a href="https://www.w3schools.com/sql/" class="info">SQL</a>
+                    </div>
+                    <div class="about_right_bottom">
+                        <h2 class="about_content_title">CERTIFICATIONS</h2>
+                        <a href="https://en.wikipedia.org/wiki/Software_development" class="info">MS OFFICE SPECIALIST 2019 (EXCEL)</a><br>
+                        <a href="https://en.wikipedia.org/wiki/Data_analysis" class="info">MS OFFICE SPECIALIST 2019 (WORD)</a><br>
+                        <a href="https://en.wikipedia.org/wiki/Cybersecurity" class="info">Start the UX Design Process: Empathize, Define, and Ideate</a><br>
+                        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="info">Artificial Intelligence</a><br>
+                        <a href="https://en.wikipedia.org/wiki/Web_development" class="info">Web Development</a>
+                    </div>
+                </div>
             </div>
-            <div class="about_right">
-               <div class="about_right_top">
-                  <h2 class="about_subtitle">Programming Skills</h2>
-                  <ul class="about_list">
-                      <li><a href="https://www.w3schools.com/python/">Python</a></li>
-                      <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
-                      <li><a href="https://www.w3schools.com/java/">Java</a></li>
-                      <li><a href="https://www.w3schools.com/html/">HTML & CSS</a></li>
-                      <li><a href="https://www.w3schools.com/sql/">SQL</a></li>
-                  </ul>
-               </div>
-               <div class="about_right_bottom">
-                  <h2 class="about_subtitle">Interests</h2>
-                  <ul class="about_list">
-                      <li><a href="https://en.wikipedia.org/wiki/Software_development">Software Development</a></li>
-                      <li><a href="https://en.wikipedia.org/wiki/Data_analysis">Data Analysis</a></li>
-                      <li><a href="https://en.wikipedia.org/wiki/Cybersecurity">Cybersecurity</a></li>
-                      <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a></li>
-                      <li><a href="https://en.wikipedia.org/wiki/Web_development">Web Development</a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   
-   
+        </div>
+    </section>
 
-   <div class="project_container" id="project_container">
-      <h1 class="project_title">Projects</h1>
-      <div class="project_content">
-         <a href="Projects\MayoExplorePHTours.htm" class="project_box">
-            <h2 class="project_box_title">Project 1: ExplorePH</h2>
-            <p class="project_box_content">A default Landing Page for a tours business 
-               offering multiple deals and destinations using basic HTML functions and Limited
-               css styling.
-            </p>
-         </a>
+    <section class="project_container" id="project_container">
+        <h1 class="project_title">Projects</h1>
+        <div class="project_content">
+            <a href="Projects/Project_1/MayoExplorePHTours.html" class="project_box">
+                <h2 class="project_box_title">Project 1: ExplorePH</h2>
+                <p class="project_box_content">A default Landing Page for a tours business offering multiple deals and destinations using basic HTML functions and Limited CSS styling.</p>
+            </a>
 
-         <a href="Projects\Project_2\MayoCourseSchedule.htm" class="project_box">
-            <h2 class="project_box_title">Project 2: Term Schedule</h2>
-            <p class="project_box_content">A basic website for schedule of activities and details
-               of the current 2nd semester of the school year 2024-2025.
-            </p>
-         </a>
+            <a href="Projects/Project_2/MayoCourseSchedule.html" class="project_box">
+                <h2 class="project_box_title">Project 2: Term Schedule</h2>
+                <p class="project_box_content">A basic website for schedule of activities and details of the current 2nd semester of the school year 2024-2025.</p>
+            </a>
 
-         <a href="project3.html" class="project_box">
-            <h2 class="project_box_title">Project 3</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
+            <a href="Projects/Project_3/index.html" class="project_box">
+                <h2 class="project_box_title">Project 3: Container Manipulation</h2>
+                <p class="project_box_content">This project is a simple demonstration of container manipulation using flexbox and grid.</p>
+            </a>
 
-         <a href="project4.html" class="project_box">
-            <h2 class="project_box_title">Project 4</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
+            <a href="Projects/Project_4/index.html" class="project_box">
+                <h2 class="project_box_title">Project 4: Rule 86</h2>
+                <p class="project_box_content">"If it exists. You can play bad apple on it."This project is a demonstration of Javascript functionality in rendering a text-based video from a video file or URL.</p>
+            </a>
 
-         <a href="project5.html" class="project_box">
-            <h2 class="project_box_title">Project 5</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
+            <a href="project5.html" class="project_box">
+                <h2 class="project_box_title">Project 5</h2>
+                <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
 
-         <a href="project6.html" class="project_box">
-            <h2 class="project_box_title">Project 6</h2>
-            <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat.
-            </p>
-         </a>
+            <a href="project6.html" class="project_box">
+                <h2 class="project_box_title">Project 6</h2>
+                <p class="project_box_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a>
+        </div>
+    </section>
 
-      </div>
-   </div>
-
-   <div class = "contact_container" id= "contact_container">
-      <div class = "contact">
-         <h1 class = "contact_title">Contact Me</h1>
-         <p class = "contact_content">Email: <a href="mailto: nathanmayo15@gmail.com">nathanmayo15@gmail.com</a></p>
-   </div>
-  </body>
+    <footer class="contact_container" id="contact_container">
+        <div class="contact">
+            <h1 class="contact_title">Contact Me</h1>
+            <p >Email: <a href="mailto:nathanmayo15@gmail.com" class="contact_content">nathanmayo15@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
 </html>

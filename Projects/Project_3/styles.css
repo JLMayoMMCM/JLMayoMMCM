@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    display: flex;
+    align-content: center;
+}
+
+.leftColumn {
+    background-color: rgb(254, 45, 104);
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.rightColumn {
+    background-color: rgb(45, 186, 57);
+    float: right;
+    
+    height: 100%;
+    width: 50%;
+}
+
+.flex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 95%;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(45, 57, 186);
+    height: 50px;
+    width: 100%;
+}
+
+.flexbox_container {
+    margin-top: 2%;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 50%;
+}
+
+.whiteAreaWhole{
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    margin: 0px;
+    margin-bottom: 1%;
+}
+
+.whiteAreaHalf {
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+    margin: 0px;
+    gap: 2%;
+}
+
+.whiteAreaLeft{
+    width: 26.5%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.whiteAreaRight {
+    width: 71.5%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.return_button {
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    left: 46%;
+    color: #ffffff;
+    background-color: #343a40;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+ }
