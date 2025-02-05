@@ -1,0 +1,720 @@
+/* --------------------------------------------------------------------------------*/
+/* Navigation - Tabs & Subtabs */
+/* --------------------------------------------------------------------------------*/
+.TabSelBg { background-image: url(images/tabSelBG.jpg); }
+.TabSel { }
+A.TabSel { font-family: Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #006699; }
+/* ------------- */
+.TabSeparatorBg { background-image: url(images/NavBG.jpg); }
+/* ------------- */
+.TabUnselBg { background-image: url(images/tabBG.jpg); }
+.TabUnsel { }
+A.TabUnsel { font-family: Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: black; }
+/* ------------- */
+.SubTabSel { font-family: Helvetica, sans-serif; font-size: 11px; color: #006699; font-weight: bold; }
+.SubTabUnsel { }
+A.SubTabUnsel { font-family: Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: black; }
+
+/* --------------------------------------------------------------------------------*/
+/* Banner */
+/* --------------------------------------------------------------------------------*/
+.BannerBg { background-color: #035175; }
+.BannerWelcome { font-size: 12px; font-style: italic; font-weight: bold; color: #000000; }
+.BannerCmd { font-size: 11px; font-style: italic; color: #000000; }
+.BannerLink { line-height: normal; color: #000000; font-size: 11px; }
+.BannerLinkSelected { line-height: normal; color: #000000; font-size: 11px; color: #EDBB0F; }
+.BannerLogin { font-size: 11px; font-weight: bold; color: #000000; }
+/*.BannerButtonBG { background-image: url(images/bannerbtn_bg.gif); }*/
+.BannerButton { font-size: 11px; font-weight: bold; text-transform: none; color: #006809; } /* green text */
+a.BannerButtonLogOff:hover {
+	text-decoration: none;
+	color: brown;
+}
+.BannerButtonLogOff {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: none;
+	margin-top: 1px;
+	color: #006809;
+}
+.BannerButtonImageLogOff:before{
+	background-image:url(images/bannerbtn_unlocked.gif);
+}
+.BannerButtonImageLogOff:before {
+	content: "";
+	width: 13px;
+	height: 18px;
+	display: inline-block;
+	margin-top: -1px;
+	margin-left: 1px;
+	margin-right: 2px;
+	vertical-align: middle;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.BannerButtonSeparator { color: #D7D8D2; }
+.BannerBtnMain { border: 1px solid #DEDDD9; margin: 0px; padding: 0px; border-spacing: 0px; border-collapse: separate; }
+A.BannerButton:link { text-decoration: none; }
+A.BannerButton:visited { text-decoration: none; }
+A.BannerButton:active { text-decoration: none; }
+A.BannerButton:hover, A.BannerButton:focus { text-decoration: none; color: brown; }
+a.BannerButtonImage:hover, a.BannerButtonImage:focus { text-decoration: none; }
+
+/* --------------------------------------------------------------------------------*/
+/* Site Links */
+/* --------------------------------------------------------------------------------*/
+.SiteLink { font-weight: bold; color: #034168; font-family: Arial; }
+A.SiteLink:link { color: #034168; text-decoration: none; }
+A.SiteLink:visited { text-decoration: none; color: #034168; }
+A.SiteLink:active { text-decoration: none; color: #034168; }
+A.SiteLink:hover { text-decoration: underline; color: #034168; }
+/* style for separator between site links */
+.Accent { color: blue; font-weight: bold; }
+
+/* --------------------------------------------------------------------------------*/
+/* Module-specific styles
+/* --------------------------------------------------------------------------------*/
+/* text style for reading messages in Discussion */
+.Message { background-color: #eeeeee; }
+
+/* style of item titles by Announcements and events */
+.ItemTitle { font-size: 9px; font-weight: bold; color: #FFFFFF; }
+
+/* dotter seperator for Assessment*/
+.dottedSeperator { border-right-width: 1px; border-right-style: solid; border-top-color: #8A9656; border-right-color: #8A9656; border-bottom-color: #8A9656; border-left-color: #8A9656; }
+.dottedBorder { border-top: 1px dashed #666666; border-right: 1px none #666666; border-bottom: 1px none #666666; border-left: 1px none #666666; }
+.dottedBorderBottom { border-bottom: 1px dashed #666666; border-right: 1px none #666666; border-top: 1px none #666666; border-left: 1px none #666666; }
+.dottedTR { border-top: 1px dashed #666666; border-right: 1px dashed #666666; border-bottom: 1px none #666666; border-left: 1px none #666666; }
+/* Orange Label for proficiency score*/
+.Proficient { font-size: 20px; color: #D26018; font-weight: bold; }
+/* --------------------------------------------------------------------------------*/
+/* General styles */
+/* --------------------------------------------------------------------------------*/
+/* style for module & page titles */
+.Head { font-size: 20px; line-height: 31px; color: #1581A0; padding-bottom: 5px; padding-top: 5px; border-bottom: solid 1px #E8E9E4;}
+.MS-Head { font-size: 22px; color: #F16122; height: 30px; width: 100%; }
+.MS-HeadBlack { font-size: 22px; height: 30px; width: 100%; }
+.HeadSmall { font-size: 10px; font-weight: bold; color: #8a9656; text-transform: uppercase; }
+
+/* style of section headers */
+.SubHead { font-weight: bold; color: #035175; }
+
+/* sylte of sub-section headers */
+.SubSubHead { font-weight: bold; }
+
+/* text style used for most text rendered by modules */
+.Normal { }
+.NormalBold { font-weight: bold; }
+.NormalBoldWhite { font-weight: bold; color: White; }
+
+/* Small Text format */
+.SmallText { font-size: 9px; }
+.SmallTextGray { font-size: 9px; color:Gray;}
+.SmallTextBold { font-size: 9px; font-weight: bold; }
+
+/* Large Text format */
+.LargeText { font-size: 22px; }
+/* Medium-Large Text format */
+.MediumLargeText { font-size: 14px; }
+.MediumLargeTextBold { font-size: 14px; font-weight: bold; }
+
+/* Note text -- to be used for all "NOTE: ..." strings */
+.NoteText { font-size: 9px; }
+
+/* text style used for textboxes */
+.NormalTextBox { }
+.SmallTextBox { font-size: 10px; padding: 0 0 0 2; }
+.SmallTextBoxUnused { font-size:10px; color:Gray; font-style:italic; }
+.NormalRed /* bcragun - need to replace? */ { font-weight: bold; color: red; }
+
+/* text style for command buttons */
+.CommandButtonBgLg { background-image: url(images/middleObtn.gif); }
+.CommandButtonBg { background-image: url(images/middleObtn-small2.gif); }
+.CommandButton { font-size: 9px; font-weight: normal; text-transform: none; color: #D26018; }
+.CommandButtonBold { font-size: 10px; font-weight: bold; text-transform: none; color: #D26018; }
+.MS-CommandButton { font-size: 10px; font-weight: normal; text-transform: none; color: black; }
+
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link { }
+A.CommandButton:visited { }
+A.CommandButton:active { }
+A.CommandButton:hover { }
+A.MS-CommandButton:link { }
+A.MS-CommandButton:visited { }
+A.MS-CommandButton:active { }
+A.MS-CommandButton:hover { }
+
+ 
+
+/* text style for command links */
+.CommandLink { font-size: 10px; font-weight: normal; font-style: italic; color: #D26018; }
+.MS-CommandLink { font-size: 10px; font-weight: normal; font-style: italic; color: black; }
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandLink:link { }
+A.CommandLink:visited { }
+A.CommandLink:active { }
+A.CommandLink:hover { }
+A.MS-CommandLink:link { }
+A.MS-CommandLink:visited { }
+A.MS-CommandLink:active { }
+A.MS-CommandLink:hover { }
+
+.CommandLinkLg { font-size: 11px; font-weight: normal; font-style: italic; color: #D26018; }
+.MS-CommandLinkLg { font-size: 11px; font-weight: normal; color: blue; }
+A.CommandLinkLg:link { }
+A.CommandLinkLg:visited { }
+A.CommandLinkLg:active { }
+A.CommandLinkLg:hover { }
+A.MS-CommandLinkLg:link { text-decoration: underline; }
+A.MS-CommandLinkLg:visited { text-decoration: underline; }
+A.MS-CommandLinkLg:active { text-decoration: underline; }
+A.MS-CommandLinkLg:hover { text-decoration: underline; }
+
+/* text style for QuickLinks */
+.QuickLink { font-family: Verdana; font-size: 11px; font-weight: normal; color: #81806D;}
+/*.QuickLink { font-family: 'Open Sans', Verdana, Helvetica, sans-serif; font-size: 11px; font-weight: 400; color: #81806D;}*/
+A.QuickLink:link { }
+A.QuickLink:visited { }
+A.QuickLink:active { }
+A.QuickLink:hover { color: #4ba146; background: url(images/nav_arrows.png) no-repeat center left; background-position: 0% 75%; font-weight: bold; }
+
+.QuickLinkOld { font-family: Verdana; font-size: 11px; font-weight: normal; color: #81806D;}
+/*.QuickLinkOld { font-family: 'Open Sans', Verdana, Helvetica, sans-serif; font-size: 11px; font-weight: 400; color: #81806D;}*/
+A.QuickLinkOld:link { }
+A.QuickLinkOld:visited { }
+A.QuickLinkOld:active { }
+A.QuickLinkOld:hover { color: #4ba146; font-weight: bold; }
+
+a.NarrowQuickLink { white-space: nowrap; }
+
+/* text style for Footer H1 */
+.FooterTweetH1 { color: #ffffff; font-weight: bold; font-weight: bold; font-family: Georgia, "Times New Roman",Times, serif; font-size: 12px; }
+
+.ControlTitle { color: #8B0000; }
+.DataGridList TD { padding: 2px; padding-left: 10px; padding-right: 10px; border-right-width: 1px; border-right-style: Solid; border-right-color: White;}
+.DataGridListAlt { padding: 2px; padding-left: 10px; padding-right: 10px; border-right-width: 1px; border-right-style: Solid; border-right-color: White; background-color: #e5e5da;}
+.DataGridListNoVerticalLines TD { padding: 2px; padding-left: 10px; padding-right: 10px;}
+
+.RightPaneBG { background-color: #e5e5da; }
+.Warning { color: #8B0000; }
+.Error { color: red; }
+/* Main Background color for tables */
+.TableBG { background-color: #e5e5da; border: solid 1px white; }
+.MS-TableBG { background-color: White; border: solid 1px black; }
+.TableBGNoBorder { background-color: #e5e5da; }
+.TableBody { margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; }
+.ButtonTable { border: 0px; height: 30px; vertical-align: bottom; }
+/* Column header */
+.ListHeader { background-color: #bec898; }
+.ListHeader2 { background-color: #bec898; color: Black; vertical-align: bottom; border: solid 1 gray;}
+.ListHeaderGridView { background-color: #bec898; font-size: 11px; color: Black; vertical-align: bottom; border: solid 1px gray; padding: 3px 2px;}
+.ListHeaderGridView th { background-color: #bec898; font-size: 11px; color: Black; vertical-align: bottom; border: solid 1px gray; padding: 3px 2px;}
+.ListHeaderGridView a {background-color: #bec898; font-size: 11px; color: Black; vertical-align: bottom; padding: 3px 2px}
+.ListHeaderGridViewNoBorder { background-color: #bec898; font-size: 11px; color: Black; vertical-align: bottom; border-color: transparent !important; padding: 3px 2px;}
+.ListHeaderGridViewNoBorder th { background-color: #bec898; font-size: 11px; color: Black; vertical-align: bottom; border-color: transparent !important; padding: 3px 2px;}
+.TableBG .ListHeader { }
+.ListHeader TD, .ListHeader TD A { font-weight: bold; color: black; padding-top: 3px; padding-bottom: 3px; white-space:nowrap; }
+.ListHeaderWrap TD, .ListHeader TD A { background-color: #bec898; font-weight: bold; color: black; padding-top: 3px; padding-bottom: 3px; vertical-align:bottom; }
+.TableBG .ListHeader TD { }
+/* List background & alternate-line background */
+.ListItem { background-color: #f0faff; }
+.ListItem TD, .ListItemAlt TD { padding-top: 2px; padding-bottom: 2px; }
+.ListItem TD, .ListItemAlt TD, .ListItemSel TD, .ListHeader TD { padding-left: 5px; padding-right: 5px; }
+.TableBG .ListItem { }
+.ListItemAlt { background-color: #dff1fb; }
+.TableBG .ListItemAlt { }
+.ListItemSel { background-color: #FAFAF8; }
+.ListItemSel TD { border-top: solid 1px #A7B379; border-bottom: solid 1px #A7B379; padding-top: 3px; padding-bottom: 3px; }
+.TableBG .ListItemSel { }
+/* Section header */
+.SectionHeader { font-size: 10px; font-weight: bold; color: #8a9656; text-transform: uppercase; }
+.MS-SectionHeader { font-size: 10px; font-weight: bold; color: #F16122; text-transform: uppercase; }
+.TableBG .SectionHeaderUnderline { color: White; }
+.SectionHeaderUnderline { color: #B7C092; }
+.BarSectionHeader { font-size: 10px; font-weight: bold; color: white; text-transform: uppercase; display: block; text-align: left; padding: 5px;}
+.BarSectionHeaderBG { background-color: #1483a2; color: red;}
+.BarSectionHeaderBG SPAN { color: white; padding-left: 5px; }  
+.BarSectionHeaderBG TD { color: white; padding-left: 5px; }  
+.SectionUnderline {height: 10px; width: 100%; background: transparent url(/portal/images/hr_Green.gif) repeat-x scroll center;}
+
+.NestedList { width: 100%; border-top: solid 1px #8A9656; background-color: #F7F7F2; }
+.NestedList TD { border-top: solid 1px white; padding-right: 5px; padding-top: 2px; padding-bottom: 2px; }
+.NestedListHeader { background-color: #EEEEE3; }
+.NestedListHeader TD { color: #8A9656; border-top: solid 1px #8A9656; font-weight: bold; padding-left: 5px; }
+.NestedListItem TD { color: #60683C; padding-left: 10px; }
+.NestedListItemAlt TD { color: #60683C; padding-left: 10px; }
+
+.Calendar { background-color: White; }
+.TableBorder { border: 2px solid #CCCCCC; padding: 5px; }
+
+.PageTabContainer { width: 100%; margin-bottom: 10px; border-bottom: solid 1px #2E6B24; }
+.PageTabLeft, .PageTabRight, .PageTabLeftSel, .PageTabRightSel { height: 23px; width: 11px; }
+.PageTabCenter, .PageTabCenterSel { padding-left: 5px; padding-right: 5px; white-space: nowrap; }
+.PageTabLeft { background-image: url(images/pagetabLeft.jpg); }
+.PageTabRight { background-image: url(images/pagetabRight.jpg); }
+.PageTabCenter { height: 23px; background-image: url(images/pagetabBG.jpg); padding-top: 5px; }
+.PageTabLeftSel { background-image: url(images/pagetabSelLeft.jpg); }
+.PageTabRightSel { background-image: url(images/pagetabSelRight.jpg); }
+.PageTabCenterSel { height: 23px; background-image: url(images/pagetabSelBG.jpg); }
+.PageTabCenter A { color: #035175; font-weight: normal; }
+.PageTabCenterSel A { color: White; font-weight: bold; }
+
+.ContentH1 { color: #1581A0; font-weight: bold; }
+.ContentH2 { color: #2e2e2e; font-weight: bold; }
+.CalloutQuote { color: #1ea2ca; font-weight: bold; font-style:italic; font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; line-height: 15pt; margin: 8px; padding: 8px; }
+.CalloutQuoteAttribution { color: #8f8f8f; font-weight: normal; margin: 8px; padding: 8px; }
+/*.ContentQuote { color: #8f8f8f; font-weight: bold; font-size: larger; }
+.ContentQuoteAttribution { color: #8f8f8f; font-weight: normal; }*/
+
+.WideMktgBtnText { color: Black; font-weight: bold; font-size: 11pt; }
+.WideMktgBtnLink { color: #D26018; font-weight: bold; font-size: 11pt; }
+
+.ReadOnlyText { color: Gray; }
+.ReadOnlyEdit {
+	color: Gray;
+	border-style: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.ReadOnlyEdit SPAN { color: Gray; }
+.ReadOnlyEditBox { color: Gray; }
+
+.TranscriptBarSectionHeader {font-size: 12px; font-weight: bold; color: white; text-transform: uppercase; margin-top: 3px; margin-bottom: 3px; display: block; }
+.TranscriptBarSectionHeaderBG { background-color: #c69431;}
+.TranscriptBarSubSectionHeaderBG { font-size: 12px; font-weight: bold; color: black; }
+.TranscriptLogoBG { background-color: #1b5475; }
+
+.Transcript { font-size: 11px; font-weight: normal; color: #C47300; }
+/* hyperlink style for buttons and link buttons used for the transcript page */
+A.Transcript:link { }
+A.Transcript:visited { }
+A.Transcript:active { }
+A.Transcript:hover { }
+
+.TranscriptBuy { font-size: 10px; font-weight: normal; font-style: italic; color: #035175; }
+/* hyperlink style for buttons and link buttons used for the transcript page */
+A.TranscriptBuy:link { }
+A.TranscriptBuy:visited { }
+A.TranscriptBuy:active { }
+A.TranscriptBuy:hover { }
+
+.TranscriptSmall { font-size: 9px; font-weight: normal; color: #C47300; }
+/* hyperlink style for buttons and link buttons used for the transcript page */
+A.TranscriptSmall:link { }
+A.TranscriptSmall:visited { }
+A.TranscriptSmall:active { }
+A.TranscriptSmall:hover { }
+
+
+.CommandLinkMarketing { font-size: 12px; font-weight: bold; font-style: italic; color: #00008B; }
+/* hyperlink style for the marketing link on the Org Admin page */
+A.CommandLinkMarketing:link { }
+A.CommandLinkMarketing:visited { }
+A.CommandLinkMarketing:active { }
+A.CommandLinkMarketing:hover { }
+
+/*
+ * Address Control Envelope
+*/
+.EnvelopePadding {
+	padding-left: 15px;
+	display: inline-block;
+}
+
+/* --------------------------------------------------------------------------------*/
+/* Wizard */
+/* --------------------------------------------------------------------------------*/
+.WizardContainer { margin-top: 10px; height: 400px; } 
+.StepList { width: 200px; padding-top: 7px; background-color: #e5e5da; vertical-align: top; padding-bottom: 35px; padding-right: 10px;  border: solid 1px gray; } 
+.StepListStepContainer SPAN { display: block; padding-left: 15px; margin-left: 5px; white-space: nowrap; height: 15px; } 
+.WizardStepListStepContainer SPAN { display: block; padding-left: 15px; margin-left: 5px; white-space: nowrap; height: 15px; text-align:left;} 
+.ActiveStep, .ActiveParentStep { color: #8a9656; background-repeat: no-repeat; font-weight: bold; padding-bottom:10px; } 
+.ActiveStep { background-image: url(images/oArrowBtn-Cmd.gif); }
+.CompletedStep { color: #8a9656; background-image: url(images/checkedG.gif); background-repeat: no-repeat; padding-bottom:10px; }		
+.PendingStep { color: #8a9656; padding-bottom:10px; }
+.StepContainer { vertical-align: top; height: 1px; padding-left: 0px; }
+.NavigationContainer { vertical-align: top; margin-top: 10px; text-align: right;}
+.WizardTabContainer { margin-top: 0px; height: 400px; } 
+.WizardTabContainerHeader { vertical-align: top; margin-top: 0px; text-align: left; margin-bottom:0px; margin-left:0px; padding-left:0px; text-align:left;}
+.WizardTabStepList { width: 200px; padding-top:0px; background-color: white; vertical-align: top; padding-bottom: 0px; padding-right: 0px; } 
+.WizardTabNavigationContainer { vertical-align: top; margin-top: 10px; text-align: right;}
+.WizardSummaryCompletedStep {color: black; background-image: url(images/BlackCheck.gif); background-repeat: no-repeat; padding-left:15px; padding-bottom:15px;}
+.WizardSummaryNonCompletedStep {color: red; padding-left:15px; padding-bottom:15px;}
+
+/*
+ * ISwitchable
+*/
+.ISwitchableReadOnly {color:Gray;}
+.ISwitchableEditable {color:Black;}
+
+/* --------------------------------------------------------------------------------*/
+/* courseware locator */
+/* --------------------------------------------------------------------------------*/
+.altTitle { font-size: 20px; color: #666644; }
+.introtext { }
+.descriptor { font-size: 11px; font-weight: bold; }
+table.results { }
+.cwCount { font-weight: 600; }
+.cwTitle { font-size: 11px; color: #666644; font-weight: 600; }
+.publisher { font-size: 11px; color: #666644; font-weight: 600; }
+.cwpager { color: #666644; font-weight: 600; }
+.cwpager A { color: #666644; font-weight: 600; }
+
+A.Courseware:link { color: #666644; }
+A.Courseware:visited { color: #666644; }
+A.Courseware:active {  }
+A.Courseware:hover {  }
+
+#container { min-width: 900px; max-width: 1000px; margin: 0 auto; min-height: 100%; margin-bottom: -125px; position: relative;}
+#footerdiv {position: relative;}
+.clearfooter { height: 125px; clear: both;}
+
+/* start of Paul's changes --------------------------------------------------------------------------------*/
+img{border:none;}
+
+#main_container{width:940px; margin:0 auto;}
+
+
+#header{ width: 940px; height: 120px; margin: 0 auto;}
+
+#left_sidebar {  float: left; margin: 0 -5px 0 -10px; width: 210px; }
+#left_sidebar .menu li { padding: 10px 0 10px 12px;  list-style: none;  border-bottom: solid 1px #e8e9e4;  }
+#left_sidebar .menu li a{ text-decoration: none; width: 170px; padding: 2px 0 0 17px;}
+#left_sidebar .menu li a:hover{ }
+
+
+
+#main_content{ width: 485px; float: right; border-right: solid 1px #d1d3c8; min-height: 580px; padding-right: 15px; margin-left:15px; }
+#main_content_wide-right{ width: 710px; float: right; min-height: 580px; padding-right: 15px; margin-left:20px; }
+#main_content .img{ float: left; margin-right: 12px; margin-bottom: 10px; padding: 8px; border: 1px solid #D2D2C8;}
+#main_content_wide-right .img{ float: left; margin-right: 15px; margin-bottom: 10px; padding: 8px; border: 1px solid #D2D2C8;}
+#main_content .newsimg{ margin-right: 15px; margin-bottom: 10px; padding: 8px; border: 1px solid #D2D2C8;}
+#main_content_wide-right .newsimg{ margin-right: 15px; margin-bottom: 10px; padding: 8px; border: 1px solid #D2D2C8;}
+
+
+/* text style for command links */
+.CommandLink { font-size: 11px; font-weight: bold; color: #4BA146; text-decoration: none;}
+.CommandLink:hover { font-size: 11px; font-weight: bold; color: #52B84C; text-decoration: none;}
+.MS-CommandLink { font-size: 11px; font-weight: normal; font-style: italic; color: black; }
+
+#right_sidebar { background: url(images/right_sidebar_bg.jpg) top left repeat-x; width: 210px; min-height: 580px; float: right; margin-right: 10px;}
+#right_sidebar img{text-align: right; margin-left: 15px; margin-top: 12px;}
+#right_sidebar .offimg{margin-left: 20px; margin-bottom: 15px;}
+#right_sidebar .offimg2{margin-left: 8px;}
+#right_sidebar .offimg3{margin-left: 23px;}
+
+#product_content{margin-top: 0;}
+#mta_content{padding-top: 10px;}
+#app_products{ width: 898px; height: 150px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(PIE.htc); padding-top: 5px; border: solid 1px #DBDBD9; margin-left: 20px;}
+#app_products .title{margin-left: 5px;}
+ul.logos{margin: 25px 0 0 0; list-style-image: none; list-style-position: inside;}
+ul.logos li{ display: inline; list-style-type: none;  }
+ul.logos li img{padding: 0 23px 0 23px;  border-right: solid 1px #DBDBD9;}
+ul.logos li.end img{border:none;}
+.title{height:29px; background: url(images/title_bg.jpg) repeat-x; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(PIE.htc); margin: 0 5px -5px 0; }
+.title img{margin: 10px 0 0 45px;}
+#dig_products{ width: 478px; height: 150px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  behavior: url(PIE.htc); padding-top: 5px; margin: 15px 0 0 20px;  float: left; border: solid 1px #DBDBD9; }
+#dig_products .title{margin-left: 5px;}
+#cert_products{ width: 373px; height: 155px; float: right; margin: 15px 20px 0 0; border: solid 1px #DBDBD9;}
+#cert_products p.head{ height: 30px; background-color: #006B8A; margin: 5px 5px 0 5px;}
+#cert_products p.head img{margin: 10px 0 0 10px;}
+#cert_products p.logo{margin: 15px 0 0 20px; float: left;}
+#cert_products p.text{margin: 30px 0 0 20px; float: left;}
+#cert_products p.go{margin: 60px 0 0 20px; float: left;}
+#cert_products ul li{display: inline; list-style-type: none;}
+
+
+ul.images{margin: 15px 0 0 0; list-style-image: none; list-style-position: inside;}
+ul.images li{ display: inline; list-style-type: none;  }
+ul.images li img{padding: 5px 10px 5px 0;}
+.overview ul.images li img{padding: 5px 30px 5px 0;}
+
+#bottom{margin-top: 15px;}
+#content{border-right: solid 1px #D1D3C8; width: 685px; padding-left: 25px;}
+.section{width: 670px; margin-top: 10px;}
+.top_banner{margin-top: 10px;}
+.title span{margin-left: 25px; line-height: 1.5; font-family: 'Rokkitt', serif; color: #ffffff; font-size: 22px; -webkit-text-shadow: #595959 0px 1px 2px; -moz-text-shadow: #595959 0px 1px 2px; text-shadow: #595959 0px 1px 2px;}
+
+.story_title{font-weight: bold; color: #026696;}
+/* end Paul --------------------------------------------------------------------------------*/
+
+/* text style for order emails */
+.EmailBody { font-family: 'Open Sans'; font-size: 10px; }
+
+/* --------------------------------------------------------------------------------*/
+/* Tags */
+/* --------------------------------------------------------------------------------*/
+BODY, H1, H2, H3, H4, H5, H6, DT, TFOOT, THEAD, TH, TD, DIV, SPAN, INPUT, SELECT, TEXTAREA 
+{ 
+    font-family: Verdana, Helvetica, sans-serif; 
+    /*font-family: 'Open Sans', Verdana, Helvetica, sans-serif;*/
+    color: #2e2e2e; 
+    font-size: 11px; 
+    line-height: 12pt; 
+    font-weight: normal; 
+    /*font-weight: 400;*/ 
+    text-transform: none; 
+}
+BODY { margin: 0px; background-color: #ffffff; }
+HTML, BODY { height: 100%; }
+P {padding-bottom: 5px; }
+H1 { font-size: 20px; line-height: 31px; color: #1581A0; padding-bottom: 15px; padding-top: 5px; border-bottom: solid 1px #E8E9E4;}
+H2 { font-size: 20px; color: #666644; }
+H3 { font-size: 12px; color: #8B0000; }
+H4 { font-size: 12px; color: #8B0000; }
+H5, DT { font-size: 11px; font-weight: bold; color: #8B0000; }
+H6 { font-weight: bold; color: #8B0000; }
+TFOOT, THEAD { font-size: 12px; color: #8B0000; }
+TH { vertical-align: baseline; font-size: 12px; font-weight: bold; color: #8B0000; }
+A:link { text-decoration: none; }
+A:visited { text-decoration: none; }
+A:active { text-decoration: none; }
+A:hover { text-decoration: underline; }
+SMALL { font-size: 8px; }
+BIG { font-size: 14px; }
+BLOCKQUOTE, PRE { font-family: Lucida Console, monospace; }
+UL { list-style-position: outside; margin-left: 1em; padding-left: 1em; margin-top: 0px; margin-bottom: 5px; list-style-image: url(common/imagelibrary/bullet.gif); }
+UL LI { line-height: 13pt; padding-bottom: 13px; }
+UL LI LI { list-style-type: disc; }
+UL LI LI LI { list-style-type: circle; }
+OL LI { list-style-type: decimal; }
+OL OL LI { list-style-type: lower-alpha; }
+OL OL OL LI { list-style-type: lower-roman; }
+HR { color: #696969; height: 1pt; text-align: left; }
+
+/* styles for skip to content link */
+/*#skipnav { left: 30px; position: absolute; top: -200px; width:1px; height:1px; overflow:hidden; }
+#skipnav A { font-size: 85%; color: #035175; }
+#skipnav A:hover { background-color: transparent; }*/
+.HiddenText { left: 30px; position: absolute; top: -200px; width:1px; height:1px; overflow:hidden;}
+
+#skiptocontent a {
+	padding:6px;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	color:white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:8px;
+	background:transparent;
+	-webkit-transition: top .5s ease-out, background 1s linear;
+    transition: top .5s ease-out, background 1s linear;
+    z-index: 100;
+}
+
+#skiptocontent a:focus {
+	position:absolute;
+    text-decoration: underline;
+	left:0px;
+	top:0px;
+	background:#A40000;
+	outline:0;	
+	-webkit-transition: top .1s ease-in, background .5s linear;
+    transition: top .1s ease-in, background .5s linear;
+}
+
+
+.ExamTableBody { margin: 10px;}
+
+/* --------------------------------------------------------------------------------*/
+/* Internal Tools */
+/* --------------------------------------------------------------------------------*/
+
+.IntToolBack{	background-color: #FFFFFF;}
+.IntToolDropDownRow{	background-color: #969BA1;}
+.IntToolFormBack{	background-color: #FFE4B3;}
+.IntToolOptionRow{	background-color: #C0C0C0;}
+.IntToolGridHeader{	background-color: #C0C0C0;}
+.IntToolGridSelectedRow{ background-color: #E0FFFF; }/*E0FFFF*/
+.IntToolFormHeader { font-size: 22px; color: #8A9656; height: 30px; border-bottom: 1px dotted #666666; width: 100%; }
+.IntToolSpacing{height: 20px;}
+.IntToolRecordBG, .IntToolRecordBG2 {background-color: #F5F5DC; border: solid 1px gray; border-collapse: collapse; border-spacing: 0px;}
+.IntToolRecordBG2 tr td {padding: 2px;}
+.IntToolTableItemTemplate {width: 600px; }
+
+/* --------------------------------------------------------------------------------*/
+/* MAS Button Style
+/* --------------------------------------------------------------------------------*/
+.MASBtn {height: 22px; display: inline-block;}
+.MASBtn td a {font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-size: 12px;}
+.MASBtn td.Button {background-color: #1265FF; padding: 4px 2px; white-space: nowrap;}
+.MASBtn td.Button a { color: #ffffff;}
+.MASBtn td.Button:hover, .MASBtn td.Button:focus, .MASBtn td.Button.CurFocus {border: 2px solid #3C02BD; background-color: #3C02BD; padding: 2px 0px;}
+.MASBtn td.Link {font-style: italic; padding: 4px 6px; white-space: nowrap;}
+.MASBtn td.Link a {color: #3C02BD;}
+.MASBtn td.Link:hover, .MASBtn td.Link:focus, .MASBtn td.Link.CurFocus {border: 2px solid ActiveBorder; padding: 2px 4px; text-shadow: 0px 1px 0px #3C02BD;}
+.MASBtn td.LeftImage::before, .MASBtn td.RightImage::after {position: relative; top: 1px; right: 0px; margin: auto;}
+.MASBtn td.LeftImage::before {content: url(/portal/images/GrayArrowLeft.png); left: 2px;}
+.MASBtn td.RightImage::after {content: url(/portal/images/GrayArrowRight.png); left: -2px;}
+
+/* --------------------------------------------------------------------------------*/
+/* TakeAnExam styles
+/* --------------------------------------------------------------------------------*/
+.PortalExamBanner {background: linear-gradient(#374395, deepskyblue); border-top-left-radius: 2em; border-top-right-radius: 2em;}
+.MS-PortalExamBanner {background-image: url(/portal/images/MSRegistrationBanner.jpg);}
+
+/* --------------------------------------------------------------------------------*/
+/* Screen-Reader only styles
+/* --------------------------------------------------------------------------------*/
+.sr-only {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+ /*=========================================================================
+   Additional styles from Studio-Element, currently unused.
+   If any of these styles need to be used, they need to be moved to the
+   proper place above and removed from this lower list.
+   =========================================================================*/
+/*
+.TableBorder { border: 2px solid #CCCCCC; }
+.WelcomeGray { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #666666; text-transform: none; }
+.WelcomeBold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #666666; text-transform: none; }
+.smallOrangeText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: italic; font-weight: normal; text-transform: none; color: D26018; }
+.greenBold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; text-transform: capitalize; color: 8A9656; }
+.CaptionText { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-style: italic; font-weight: normal; color: #000000; text-transform: none; }
+.MasItemTitle { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: normal; font-weight: normal; color: #FFFFFF; }
+.MasHeadBlack { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; text-transform: none; color: #000000; }
+*/
+
+
+.capadmin-list {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+	grid-gap: 20px;
+	margin-bottom: 40px;
+}
+
+.capadmin-list-item {
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+	padding: 10px 15px 5px;
+}
+
+.capadmin-list-item a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.capadmin-list-item:hover {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+.capadmin-card {
+	box-sizing: border-box;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.capadmin-card img {
+	max-width: 100%;
+	height: 70%;
+}
+
+.capadmin-container {
+	height: 100%;
+}
+
+.capadmin-card-body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 18px;
+}
+
+.capadmin-card-name {
+	margin: .4rem 0 .4rem 0;
+	font-weight: bold;
+	font-size: larger;
+	text-align: center;
+	border: none;
+	color: #000;
+}
+
+.capadmin_filter {
+	position: relative;
+	align-self: flex-start;
+	padding: 0px 0px 0px 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.capadmin_filter_text {
+	position: absolute;
+	align-self: center;
+	padding: 2px 2px 2px 2px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.capadmin-Btn {
+	background-color: #1581A0;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 75%;
+}
+
+.capadmin-Btn:hover {
+    background-color: #0E5E7A;
+}
+
+.capadmin-anchor {
+    text-decoration: none;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 600;
+	color:black;
+}
+
+.capadmin-anchor:hover {
+	text-decoration: underline;
+	background-color: #1581A0;
+}
+
+.capadmin-form-control {
+	display: block;
+	width: 90%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.5;
+	background-clip: padding-box;
+	border: 1px solid gray;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.capadmin-ErrSpan {
+	color: red;
+    font-size: 14px;
+	font-weight:600;
+	margin-bottom:25px;
+}
+
+.capadmin-form-label {
+	margin-bottom: 0.5rem;
+}
+
+.capadmin-parent {
+	display: grid;
+	grid-template-columns: 80% 1fr;
+	grid-column-gap: 10px;
+	margin-top: 25px;
+	margin-bottom:25px;
+}
