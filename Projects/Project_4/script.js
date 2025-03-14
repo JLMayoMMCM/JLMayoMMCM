@@ -7,8 +7,8 @@ const restartButton = document.getElementById("restart");
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 70;
-canvas.height = 50;
+canvas.width = 280;
+canvas.height = 140;
 
 const asciiChars = "█▓▒░ ";
 

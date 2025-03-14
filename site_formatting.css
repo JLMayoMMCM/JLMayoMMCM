@@ -235,16 +235,16 @@ body::-webkit-scrollbar {
    text-align: center;
    font-size: 40px;
    line-height: 1.2;
-   word-spacing: 4px;
    font-family: 'Comic Sans MS', cursive, sans-serif;
    color: #ffffff;
-   margin: 20px 0;
 }
 
 .project_content {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 25px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 50px;
+   margin: 20px;
    justify-content: center;
    align-items: flex-start;
    width: 100%;
@@ -270,19 +270,23 @@ body::-webkit-scrollbar {
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project_box:nth-child(1) {
+.project_box {
+   background: url('Assets/image.png') center/cover no-repeat;
+}
+
+.live_projects .project_box:nth-child(1) {
    background: url('Assets/ExplorerTours.png') center/cover no-repeat;
 }
 
-.project_box:nth-child(2) {
+.live_projects .project_box:nth-child(2) {
    background: url('Assets/Schedule.png') center/cover no-repeat;
 }
 
-.project_box:nth-child(3) {
+.live_projects .project_box:nth-child(3) {
    background: url('Assets/Container.png') center/cover no-repeat;
 }
 
-.project_box:nth-child(4) {
+.live_projects .project_box:nth-child(4) {
    background: url('Assets/Bapple.png') center/cover no-repeat;
 }
 
